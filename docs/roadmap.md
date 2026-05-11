@@ -1,53 +1,22 @@
-# Yupana CRT Roadmap
+# Yupana CRT — Roadmap
 
-## Phase 1 — Foundational Architecture
-
+## Phase 1
+- Repository initialization
 - CRT execution model
-- local transition systems
-- modular runtime
-- torsional state formalization
+- Table-driven modular engine
+- Visual architecture specification
 
-Status: active
+## Phase 2
+- Modular execution kernels
+- Basin evaluation hardware model
+- Torsion-aware execution layer
 
----
+## Phase 3
+- FPGA prototype
+- Parallel CRT scheduler
+- Spatial execution fabric
 
-## Phase 2 — Visual Runtime Systems
-
-- toroidal renderers
-- phase-space visualizers
-- torsion field visualization
-- modular execution tracing
-
-Status: planned
-
----
-
-## Phase 3 — FPGA Prototypes
-
-- LUT-based execution nodes
-- modular systolic arrays
-- carry-free execution fabrics
-- deterministic timing analysis
-
-Status: exploratory
-
----
-
-## Phase 4 — Modular Neural Systems
-
-- torsional recurrent structures
-- discrete attractor networks
-- modular inference systems
-- phase-based memory computation
-
-Status: conceptual research
-
----
-
-## Phase 5 — ASIC Investigation
-
-- custom modular execution silicon
-- ultra-low-energy modular processors
-- spatial dynamical computing substrates
-
-Status: long-term
+## Phase 4
+- ASIC feasibility
+- Neural modular architectures
+- Dynamical inference systems
