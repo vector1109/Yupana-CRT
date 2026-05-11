@@ -1,148 +1,114 @@
 # Yupana CRT
 
-## Spatial Modular Computing Architecture Based on CRT Dynamics
+## A Hardware-Oriented Computational Architecture for Modular Dynamical Systems
 
 ---
 
 ## Overview
 
-Yupana CRT is an experimental computational architecture derived from the theoretical framework established in MDST (Modular Dynamical Systems Toolkit).
+Yupana CRT is a computational architecture derived from the theoretical framework introduced in MDST (Modular Dynamical Systems Toolkit).
 
-The project explores:
+While MDST defines the mathematical structure of modular dynamical systems over finite rings, Yupana CRT focuses on their practical realization as:
 
-- CRT-native computation
-- table-driven modular execution
-- carry-free arithmetic architectures
-- constant-latency modular dynamics
-- discrete toroidal state spaces
-- modular torsion dynamics
-- hardware-oriented finite ring computation
+- table-driven execution systems
+- modular inference engines
+- parallel CRT computation fabrics
+- torsion-aware dynamical architectures
 
-Unlike traditional binary architectures, Yupana CRT operates through independent modular components connected via Chinese Remainder decomposition.
+The project explores a computation model where arithmetic is fully decomposed through the Chinese Remainder Theorem (CRT), eliminating carries and enabling independent local evolution in each modular component.
+
+---
+
+## Core Idea
+
+Instead of evaluating dynamics iteratively:
+
+f(x) = x^k mod n
+
+Yupana CRT decomposes the system into independent modular lanes:
+
+Z_n ≅ Z_(p1^a1) × ... × Z_(pr^ar)
+
+Each lane evolves locally using precomputed transition tables.
+
+This transforms global modular dynamics into a spatial computational fabric.
+
+---
+
+## Architectural Properties
+
+- Carry-free computation
+- Constant-time local evaluation
+- L1-resident execution tables
+- Massive parallelism
+- Deterministic latency
+- Basin-oriented computation
+- Torsion-aware state evolution
 
 ---
 
 ## Relationship to MDST
 
-MDST defines the mathematical framework.
+MDST provides:
 
-Yupana CRT implements the computational substrate.
+- algebraic formalism
+- attractor theory
+- Φ classification
+- modular torsion theory
+- CRT geometric decomposition
 
-| Project | Role |
-|---|---|
-| MDST | Theory and formalism |
-| Yupana CRT | Runtime and architecture |
+Yupana CRT provides:
 
----
-
-## Core Concepts
-
-### CRT-Native Execution
-
-A number is represented as:
-
-\[
-x \leftrightarrow (x_1, x_2, \dots, x_r)
-\]
-
-with independent local evolution.
+- execution architecture
+- computational engines
+- hardware realization paths
+- modular scheduling systems
+- dynamical evaluation infrastructure
 
 ---
 
-### Table-Driven Dynamics
+## Long-Term Vision
 
-Instead of iterative arithmetic:
+Yupana CRT explores the possibility of:
 
-\[
-f_k(x)=x^k \bmod n
-\]
-
-is evaluated through local lookup tables:
-
-\[
-T_i[a]=a^k \bmod p_i^{\alpha_i}
-\]
-
-allowing constant-time local transitions.
-
----
-
-### Carry-Free Structure
-
-Each component evolves independently:
-
-- no global carry propagation
-- high parallelism
-- deterministic latency
-- cache-local execution
-
----
-
-### Modular Torsion
-
-The system supports periodic orbital structures inside unit groups:
-
-- local cycles
-- torsional states
-- phase-preserving evolution
-- finite-state dynamic memory
-
----
-
-## Research Directions
-
-- FPGA implementation
-- ASIC modular accelerators
-- discrete neural substrates
-- toroidal state processors
-- modular inference engines
-- torsion-based computation
+- FPGA-native modular processors
+- torsion-based computational units
+- discrete dynamical neural substrates
+- modular inference accelerators
+- spatial computation fabrics
 
 ---
 
 ## Repository Structure
 
 ```text
-Yupana-CRT/
-├── Core/
-├── Hardware/
-├── Theory/
-├── Visuals/
-├── Examples/
-├── Specs/
-└── docs/
+Core/          -> execution engines
+Hardware/      -> architecture specifications
+Theory/        -> computational formalism
+Visuals/       -> diagrams and projections
+Examples/      -> minimal demonstrations
+Specs/         -> low-level specifications
+docs/          -> technical documentation
 
 Status
 
-Early-stage experimental architecture.
+Early-stage research architecture.
 
-Research repository under active development.
+Experimental and under active development.
 
 License
 
-Separate licensing model from MDST.
+Academic and research usage permitted.
 
-Commercial and hardware-oriented implementations may require additional licensing.
+Commercial, industrial, ASIC, FPGA, or proprietary derivative implementations require explicit authorization.
 
 
 ---
 
-## 2. Crear `.gitignore`
+# 5. COMMIT GRANDE
 
-```powershell id="iy9t3n"
-notepad .gitignore
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.obj
-*.o
-*.exe
-*.dll
-*.bin
-*.log
-*.tmp
-*.cache
-.vscode/
-.idea/
+```powershell id="xst94m"
+git add .
+git commit -m "Add core CRT engine and hardware architecture"
+git push origin main
 
