@@ -1,80 +1,50 @@
-# Yupana CRT Hardware Architecture
-
-## Concept
-
-Yupana CRT proposes a modular computational substrate based on independent CRT-local execution units.
-
-Instead of binary carry propagation, computation is spatially distributed across modular channels.
-
----
+# Yupana CRT Architecture
 
 ## Core Principle
 
-A value:
+Yupana CRT replaces carry-based arithmetic with fully decoupled modular components.
 
-\[
-x \in \mathbb{Z}_n
-\]
+Each arithmetic lane operates independently over:
 
-is represented as:
+- Z_(p1^a1)
+- Z_(p2^a2)
+- ...
+- Z_(pr^ar)
 
-\[
-(x_1,x_2,\dots,x_r)
-\]
+using local precomputed transition tables.
 
-where each component evolves independently.
+---
+
+## Execution Model
+
+Input state:
+(x1, x2, ..., xr)
+
+Evaluation:
+(x1^k mod m1,
+ x2^k mod m2,
+ ...
+ xr^k mod mr)
+
+No carries exist between components.
 
 ---
 
 ## Architectural Consequences
 
-### No Carry Propagation
-
-Classical ALUs depend on carry chains.
-
-Yupana CRT eliminates global carries by operating entirely inside local modular domains.
-
----
-
-### Constant-Latency Local Dynamics
-
-Each component executes through precomputed lookup tables:
-
-\[
-T_i[a]=f(a)
-\]
-
-allowing:
-
-- deterministic timing
-- bounded latency
-- branch-free execution
+- Constant-time local evaluation
+- L1-resident execution tables
+- Massive parallelism
+- Deterministic latency
+- No global synchronization
 
 ---
 
-### Spatial Parallelism
+## Long-Term Direction
 
-Each modulus component acts as an independent execution lane.
+Potential realizations:
 
-This naturally maps to:
-
-- FPGA fabrics
-- SIMD architectures
-- ASIC modular arrays
-- systolic modular processors
-
----
-
-## Potential Advantages
-
-- low-energy inference
-- predictable latency
-- massive parallelism
-- cache locality
-- discrete dynamical computation
-
----
-
-## Research Status
-
-Conceptual architecture under active investigation.
+- FPGA modular fabrics
+- ASIC dynamical inference engines
+- Torsion-aware computational units
+- Spatial modular neural systems
