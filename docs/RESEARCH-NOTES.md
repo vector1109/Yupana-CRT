@@ -1,118 +1,125 @@
-# Research Notes — Yupana CRT
+# Yupana CRT — Research Notes
 
-## Scope
+## Current Research Themes
 
-This document summarizes current exploratory directions related to the Yupana CRT computational framework.
-
-The project remains theoretical and experimental.
+This document summarizes active conceptual directions under investigation within the Yupana CRT framework.
 
 ---
 
-## Core Research Areas
+## 1. CRT-Native Execution
 
-### 1. CRT-Based Computation
+Investigate computation performed entirely inside CRT-local domains without reconstruction during intermediate stages.
 
-Investigating computation through:
+Key questions:
 
-- modular decomposition
-- independent arithmetic channels
-- local dynamical execution
-- non-carry arithmetic structures
-
----
-
-### 2. Dynamical Attractor Systems
-
-Exploring finite dynamical systems of the form:
-
-\[
-f_k(x)=x^k \bmod n
-\]
-
-with emphasis on:
-
-- attractor classification
-- basin geometry
-- functional graph structure
-- bounded-depth convergence
+- Can global synchronization be minimized?
+- Can reconstruction be deferred indefinitely?
+- What classes of computation remain local?
 
 ---
 
-### 3. Phi-Based Classification
+## 2. Torsion-Aware Computation
 
-The operator:
+Study periodic orbital structures as computational resources.
+
+Topics include:
+
+- phase encoding
+- oscillatory memory
+- torsional routing
+- cycle synchronization
+- modular resonance structures
+
+---
+
+## 3. Basin Geometry Compression
+
+The attractor partition induced by:
 
 \[
 \Phi(x)
 \]
 
-provides asymptotic classification without iterative simulation.
+suggests highly compressible dynamical representations.
 
-Research directions include:
+Research goals:
 
-- generalized classifiers
-- polynomial extensions
-- categorical formulations
-- hardware realizations
-
----
-
-### 4. Modular Torsion
-
-Periodic orbital behavior introduces:
-
-- cyclic dynamical persistence
-- phase structure
-- orbital memory
-- torsion-based computation
-
-Potential applications remain under investigation.
+- compressed basin indexing
+- attractor-domain caching
+- geometric routing tables
+- dynamical equivalence reduction
 
 ---
 
-### 5. Hardware Architectures
+## 4. FPGA Feasibility
 
-Possible implementation substrates:
+Evaluate practical implementation constraints for:
 
-- FPGA systems
-- ASIC modular fabrics
-- distributed execution arrays
-- low-energy inference accelerators
-
----
-
-### 6. Neural Computation
-
-Exploratory ideas include:
-
-- modular neural substrates
-- torsion-driven recurrent systems
-- finite-state attractor learning
-- discrete dynamical inference engines
-
-No practical neural implementation currently exists.
+- lookup-table density
+- routing overhead
+- timing determinism
+- modular execution fabrics
+- parallel CRT schedulers
 
 ---
 
-## Important Position
+## 5. Modular Neural Structures
 
-The project does NOT claim:
+Explore whether modular dynamical basins can support inference-like behavior.
 
-- superiority over classical computing
-- superiority over quantum systems
-- replacement of neural networks
-- proven computational advantage
+Potential directions:
 
-The work is exploratory and foundational.
-
----
-
-## Long-Term Goal
-
-To investigate whether modular dynamical geometry can serve as an alternative computational substrate.
+- attractor-based classification
+- torsional memory states
+- modular recurrent structures
+- phase-driven activation systems
 
 ---
 
-## Current Status
+## 6. Dynamical Geometry
 
-Early-stage conceptual research.
+Investigate the geometric interpretation of modular state spaces.
+
+Topics:
+
+- CRT toroidal topology
+- discrete phase manifolds
+- orbital geometry
+- modular flow structure
+- dynamical embeddings
+
+---
+
+## 7. Complexity Questions
+
+Open theoretical problems include:
+
+- bounds on transient depth
+- torsion spectrum growth
+- attractor counting formulas
+- asymptotic basin structure
+- computational complexity classes
+
+---
+
+## Research Status
+
+All directions remain exploratory.
+
+No claims are made regarding:
+
+- superiority over classical hardware
+- practical industrial feasibility
+- neural replacement architectures
+- computational universality
+
+until rigorous validation is performed.
+
+---
+
+## Guiding Principle
+
+The purpose of Yupana CRT is not to replace existing computation immediately.
+
+The objective is to investigate whether modular algebraic dynamics define a viable alternative computational substrate.
+
