@@ -1,20 +1,30 @@
 # Z60 Demonstration
 
-## System
+## Objective
 
-We consider the modular dynamical system:
+This example illustrates the core operational concepts of Yupana CRT using:
+
+\[
+\mathbb{Z}_{60}
+\]
+
+under the modular dynamical map:
 
 \[
 f_2(x)=x^2 \bmod 60
 \]
 
-with CRT decomposition:
+---
+
+## CRT Decomposition
+
+The ring factorizes as:
 
 \[
-60=2^2 \cdot 3 \cdot 5
+60 = 2^2 \cdot 3 \cdot 5
 \]
 
-thus:
+therefore:
 
 \[
 \mathbb{Z}_{60}
@@ -26,119 +36,91 @@ thus:
 \mathbb{Z}_5
 \]
 
----
-
-## CRT Representation
-
-Each value:
-
-\[
-x \in \mathbb{Z}_{60}
-\]
-
-is represented as:
-
-\[
-(x_4,x_3,x_5)
-\]
-
-where:
-
-- \(x_4 \in \mathbb{Z}_4\)
-- \(x_3 \in \mathbb{Z}_3\)
-- \(x_5 \in \mathbb{Z}_5\)
+Each component evolves independently.
 
 ---
 
 ## Local Dynamics
 
-The system evolves independently inside each component:
+The global evolution:
 
 \[
-(x_4,x_3,x_5)
-\mapsto
-(x_4^2,x_3^2,x_5^2)
+x \rightarrow x^2 \bmod 60
 \]
 
-No cross-component interaction exists.
+becomes:
+
+\[
+(x_1,x_2,x_3)
+\rightarrow
+(x_1^2,x_2^2,x_3^2)
+\]
+
+with fully local execution.
 
 ---
 
-## Phi Classification
+## Attractor Structure
 
-The MDST classifier:
+The system partitions into attractor basins determined by:
 
 \[
 \Phi(x)
 \]
 
-assigns each state directly to its asymptotic attractor basin.
+Each coordinate contributes:
 
-This classification occurs without iterative simulation.
+- 0 if divisible by its local prime
+- 1 otherwise
 
----
-
-## Observed Properties
-
-### Attractor Classes
-
-The system contains:
-
-\[
-2^3=8
-\]
-
-idempotent attractor classes.
+This produces the global attractor signature without iterative simulation.
 
 ---
 
-### Basin Structure
+## Basin Geometry
 
-The state space partitions into non-uniform attraction basins.
+The modular phase space forms:
 
----
-
-### Finite Depth
-
-All trajectories converge within bounded depth.
-
----
-
-### Functional Graph
-
-The graph structure contains:
-
-- fixed points
 - transient trees
 - local cycles
+- attractor regions
+- torsional structures
 
----
-
-## Torsion Structure
-
-Certain CRT components exhibit periodic orbital behavior inside unit groups.
-
-These cycles define modular torsion.
+inside the CRT topology.
 
 ---
 
 ## Computational Interpretation
 
-The Z60 system demonstrates:
+This example demonstrates:
 
 - CRT-local execution
-- direct attractor classification
-- finite dynamical geometry
-- modular torsion behavior
-- non-iterative asymptotic inference
+- branch-free modular evolution
+- non-iterative classification
+- spatial decomposition
+- torsion-aware dynamics
 
 ---
 
 ## Importance
 
-Z60 acts as the canonical minimal demonstrator for:
+The Z60 system acts as a minimal canonical example where:
 
-- MDST
-- Yupana CRT
-- modular attractor systems
-- torsion-aware computation
+- the full geometry is tractable
+- attractor basins are explicit
+- CRT decomposition is visible
+- torsion behavior emerges naturally
+
+---
+
+## Long-Term Role
+
+The Z60 model serves as:
+
+- a reference dynamical system
+- a validation environment
+- a visualization benchmark
+- a hardware prototyping target
+
+for future Yupana CRT experiments.
+
