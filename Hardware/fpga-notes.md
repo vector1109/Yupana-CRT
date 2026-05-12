@@ -1,133 +1,145 @@
-# FPGA Notes — Yupana CRT
+# FPGA Exploration Notes
 
-## Motivation
+## Overview
 
-Yupana CRT naturally maps to FPGA fabrics due to its fully decomposable modular structure.
+This document summarizes exploratory ideas for mapping Yupana CRT concepts onto FPGA architectures.
 
-The architecture minimizes:
+The objective is to evaluate whether modular dynamical execution can benefit from spatial programmable logic fabrics.
 
-- carry propagation
-- global synchronization
-- sequential dependency chains
+---
 
-while maximizing:
+# 1. Why FPGA?
 
-- locality
+FPGA devices naturally support:
+
+- parallel execution
+- spatial routing
+- lookup-table computation
 - deterministic timing
-- spatial parallelism
+- configurable local architectures
+
+These properties align closely with CRT-local execution principles.
 
 ---
 
-## Fundamental Observation
+# 2. CRT-Local Processing Units
 
-Each CRT component behaves as an independent execution lane.
-
-Given:
+Each CRT component:
 
 \[
-x \leftrightarrow (x_1,\dots,x_r)
+\mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-each component may execute through:
+may map to an independent hardware region.
+
+Each region can contain:
+
+- local lookup tables
+- modular state registers
+- transition logic
+- torsion metadata
+- attractor classifiers
+
+---
+
+# 3. Lookup-Based Dynamics
+
+The map:
 
 \[
-T_i[a]=f(a)
+f_k(x)=x^k \bmod n
 \]
 
-using local lookup tables.
+can be evaluated through precomputed LUTs.
+
+Possible implementation targets include:
+
+- FPGA LUT primitives
+- BRAM blocks
+- distributed RAM
+- local SRAM structures
 
 ---
 
-## FPGA Affinity
+# 4. Spatial Execution
 
-FPGAs are particularly suitable because they already provide:
+Instead of sequential arithmetic pipelines, the system becomes a spatial fabric of modular domains.
 
-- distributed LUT fabrics
-- local routing
-- parallel execution regions
-- deterministic pipelines
+Potential advantages:
 
-Yupana CRT aligns directly with this execution model.
-
----
-
-## Potential FPGA Mapping
-
-### One Lane per Modulus
-
-Each modulus component may occupy:
-
-- dedicated LUT blocks
-- local BRAM
-- independent pipelines
+- low control overhead
+- parallel state evolution
+- deterministic latency
+- branch elimination
 
 ---
 
-### Phi Layer
+# 5. Dynamical Classification Hardware
 
-The classifier:
+The operator:
 
 \[
 \Phi(x)
 \]
 
-can be implemented as:
+may be implemented as direct combinational logic or lookup evaluation.
 
-- direct combinational logic
-- lookup structures
-- branch-free routing
+This could allow:
 
----
+- immediate basin classification
+- attractor-domain routing
+- phase-space indexing
 
-### Torsion Layer
-
-Periodic orbital structures may be represented through:
-
-- cycle-state registers
-- finite-state oscillators
-- phase counters
+without iterative execution.
 
 ---
 
-## Possible Hardware Advantages
+# 6. Torsion Tracking
 
-### Predictable Timing
+Additional hardware layers may track:
 
-Execution latency becomes bounded and deterministic.
+\[
+\vec{\tau}(x)
+\]
 
----
+for:
 
-### Massive Parallelism
-
-All CRT channels execute simultaneously.
-
----
-
-### Low-Energy Operation
-
-Lookup-driven execution may reduce arithmetic overhead.
+- periodicity analysis
+- cycle synchronization
+- phase-aware routing
+- oscillatory memory structures
 
 ---
 
-### Compact Locality
+# 7. Potential FPGA Challenges
 
-Small modular tables fit naturally inside FPGA memory structures.
+Open implementation difficulties include:
 
----
-
-## Research Questions
-
-- optimal modulus partitioning
-- routing complexity
-- torsion-aware scheduling
-- asynchronous CRT fabrics
-- dynamic reconfiguration
-- modular neural accelerators
+- routing congestion
+- BRAM scaling
+- CRT reconstruction cost
+- synchronization overhead
+- dynamic range limitations
 
 ---
 
-## Status
+# 8. Candidate Research Targets
 
-The FPGA direction is theoretical and exploratory.
+Possible experimental milestones:
 
-No synthesis benchmarks are currently claimed.
+- small-scale CRT execution fabric
+- attractor classifier accelerator
+- torsion-aware modular processor
+- basin routing engine
+- modular recurrent dynamical core
+
+---
+
+# 9. Research Status
+
+No FPGA prototype currently exists.
+
+All hardware directions remain conceptual and exploratory.
+
+Performance characteristics are unknown until implementation and benchmarking are performed.
+
