@@ -37,6 +37,13 @@ This transforms global modular dynamics into a spatial computational fabric.
 
 ## Architectural Properties
 
+---
+
+## Architecture Diagram
+
+![Yupana CRT Architecture](Visuals/yupana_architecture.png)
+
+---
 - Carry-free computation
 - Constant-time local evaluation
 - L1-resident execution tables

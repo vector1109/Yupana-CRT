@@ -1,0 +1,77 @@
+digraph YupanaCRT {
+
+    rankdir=LR;
+    splines=ortho;
+    nodesep=0.7;
+    ranksep=1.0;
+
+    bgcolor="white";
+
+    node [
+        shape=box,
+        style="rounded,filled",
+        fillcolor="#E8F0FE",
+        color="#1A73E8",
+        fontname="Helvetica",
+        fontsize=11
+    ];
+
+    edge [
+        color="#5F6368",
+        arrowsize=0.8
+    ];
+
+    INPUT [
+        label="Input State\n(x₁, x₂, ..., xᵣ)",
+        fillcolor="#D7FFD9"
+    ];
+
+    CRT [
+        label="CRT Decomposition\nZₙ → Π Z_(pᵢ^αᵢ)",
+        fillcolor="#FFF4CC"
+    ];
+
+    Z4 [
+        label="Lane 1\nZ₄\nLookup Table"
+    ];
+
+    Z3 [
+        label="Lane 2\nZ₃\nLookup Table"
+    ];
+
+    Z5 [
+        label="Lane 3\nZ₅\nLookup Table"
+    ];
+
+    TOR [
+        label="Torsion Analysis\nτ(x)",
+        fillcolor="#FFD6E7"
+    ];
+
+    PHI [
+        label="Attractor Oracle\nΦ(x)",
+        fillcolor="#FFE0B2"
+    ];
+
+    OUT [
+        label="Output State\nDynamics + Basin + Torsion",
+        fillcolor="#D7FFD9"
+    ];
+
+    INPUT -> CRT;
+
+    CRT -> Z4;
+    CRT -> Z3;
+    CRT -> Z5;
+
+    Z4 -> TOR;
+    Z3 -> TOR;
+    Z5 -> TOR;
+
+    Z4 -> PHI;
+    Z3 -> PHI;
+    Z5 -> PHI;
+
+    TOR -> OUT;
+    PHI -> OUT;
+}
