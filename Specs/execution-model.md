@@ -1,92 +1,185 @@
 # Yupana CRT Execution Model
 
-## Overview
+## Objective
 
-Yupana CRT executes modular dynamics through independent local state-transition systems.
+The Yupana CRT execution model defines a computational architecture based on modular decomposition, local dynamical evaluation, and spatially distributed execution.
 
-The architecture replaces sequential arithmetic propagation with spatially decomposed modular evolution.
+The goal is to replace globally coupled arithmetic pipelines with independent modular execution domains.
 
 ---
 
-## State Representation
+# 1. Fundamental Representation
 
-A global state is represented as:
+A value:
+
+\[
+x \in \mathbb{Z}_n
+\]
+
+is represented through CRT coordinates:
 
 \[
 x \leftrightarrow (x_1,x_2,\dots,x_r)
 \]
 
-under CRT decomposition:
+where:
 
 \[
-\mathbb{Z}_n
-\cong
-\prod_i \mathbb{Z}_{p_i^{\alpha_i}}
+n=\prod_i p_i^{\alpha_i}
 \]
 
-Each coordinate evolves independently.
+Each coordinate belongs to an independent modular component.
 
 ---
 
-## Local Transition Tables
+# 2. Local Execution Principle
 
-For each component:
+Each component evolves independently under:
 
 \[
-T_i[a]=a^k \bmod p_i^{\alpha_i}
+f_k(x_i)=x_i^k \bmod p_i^{\alpha_i}
 \]
 
-The next state is evaluated entirely through lookup operations.
+No global carry propagation exists between components.
 
-No iterative exponentiation is required during execution.
+Execution becomes:
 
----
-
-## Dynamic Classification Layer
-
-The execution substrate integrates:
-
-- attractor classification
-- basin identification
-- transient depth estimation
-- torsion signature extraction
-
-through precomputed local metadata.
+- local
+- bounded
+- deterministic
+- spatially parallel
 
 ---
 
-## Constant-Time Evaluation
+# 3. Table-Driven Evaluation
 
-Execution complexity becomes:
+Each modular domain stores precomputed transition tables:
 
 \[
-O(r)
+T_i[a]=f_k(a)
 \]
 
-where \(r\) is the number of CRT components.
+This enables:
 
-Latency is independent of orbit depth.
-
----
-
-## Computational Implications
-
-The model enables:
-
-- deterministic execution
-- branch-free evaluation
+- constant-time state evolution
+- branch-free execution
 - predictable timing
-- spatial decomposition
 - hardware locality
 
 ---
 
-## Long-Term Objective
+# 4. Execution Pipeline
 
-Develop a modular execution substrate capable of:
+## Stage 1 — CRT Projection
 
-- discrete dynamical inference
-- torsion-aware computation
-- algebraic state classification
-- massively parallel modular processing
+Input values are decomposed into modular coordinates.
+
+---
+
+## Stage 2 — Local Evolution
+
+Each coordinate evolves independently using local lookup tables.
+
+---
+
+## Stage 3 — Dynamical Classification
+
+The operator:
+
+\[
+\Phi(x)
+\]
+
+classifies asymptotic behavior without iterative simulation.
+
+---
+
+## Stage 4 — Torsion Evaluation
+
+Optional torsion analysis computes:
+
+\[
+\vec{\tau}(x)
+\]
+
+to determine periodic orbital structure.
+
+---
+
+## Stage 5 — Reconstruction
+
+CRT recombination reconstructs global system state when required.
+
+---
+
+# 5. Architectural Properties
+
+## Deterministic Latency
+
+Execution cost depends only on table access.
+
+---
+
+## Carry-Free Arithmetic
+
+No long carry chains exist.
+
+---
+
+## Parallel Modularity
+
+Each component can map to:
+
+- independent cores
+- FPGA regions
+- SIMD lanes
+- ASIC arrays
+
+---
+
+## Cache Locality
+
+Tables may reside entirely inside:
+
+- L1 cache
+- BRAM blocks
+- local SRAM
+
+for bounded modular domains.
+
+---
+
+# 6. Dynamical Computation
+
+The system treats computation as evolution over finite phase spaces.
+
+This introduces:
+
+- attractor-guided execution
+- phase-aware states
+- orbital memory
+- torsion-sensitive dynamics
+
+as computational primitives.
+
+---
+
+# 7. Potential Hardware Mapping
+
+The execution model naturally aligns with:
+
+- FPGA fabrics
+- modular systolic arrays
+- spatial accelerators
+- low-power inference hardware
+
+---
+
+# 8. Research Status
+
+The execution model is currently theoretical.
+
+No complete hardware implementation exists at present.
+
+Its feasibility, efficiency, and scaling behavior remain active research topics.
 
