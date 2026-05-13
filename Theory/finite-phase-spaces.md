@@ -2,74 +2,61 @@
 
 ## Overview
 
-This document describes the interpretation of modular dynamical systems as finite phase spaces within the MDST and Yupana CRT framework.
+This document describes the interpretation of finite modular rings as discrete phase spaces within the MDST and Yupana CRT framework.
 
-The central idea is that modular arithmetic induces structured discrete geometries containing attractors, cycles, and transient dynamical regions.
+The framework treats modular arithmetic systems as finite dynamical geometries supporting orbital evolution, asymptotic structure, and recurrent dynamics.
 
 ---
 
-# 1. Dynamical Systems over Finite Rings
+# 1. Modular Phase Space
 
-Consider the modular map:
+Consider the finite ring:
+
+\[
+\mathbb{Z}_n
+\]
+
+Within the framework, this ring is interpreted as a discrete phase space composed of finitely many dynamical states.
+
+---
+
+# 2. Dynamical Evolution
+
+Define the modular map:
 
 \[
 f_k(x)=x^k \bmod n
 \]
 
-defined over:
+Repeated application generates trajectories:
 
 \[
-\mathbb{Z}_n
+x,
+f_k(x),
+f_k^{(2)}(x),
+\dots
 \]
 
-Because the ring is finite, every orbit eventually becomes periodic.
+inside the finite phase space.
 
 ---
 
-# 2. Phase Space Interpretation
+# 3. Finite Dynamical Consequences
 
-The set:
+Because the phase space is finite, every trajectory eventually exhibits:
 
-\[
-\mathbb{Z}_n
-\]
+- periodic recurrence
+- asymptotic convergence
+- recurrent orbital structure
+- attractor behavior
 
-is interpreted as a finite phase space.
-
-Each element represents:
-
-- a dynamical state
-- a geometric coordinate
-- a position in orbital structure
-
-inside the modular system.
+inside the modular geometry.
 
 ---
 
-# 3. Functional Graph Geometry
+# 4. CRT Coordinate Geometry
 
-The map:
-
-\[
-f_k
-\]
-
-induces a directed functional graph.
-
-The graph decomposes into:
-
-- fixed points
-- periodic cycles
-- transient trees
-- attractor basins
-
-forming a structured finite geometry.
-
----
-
-# 4. CRT Decomposition
-
-Using CRT:
+Using CRT decomposition:
 
 \[
 \mathbb{Z}_n
@@ -77,27 +64,27 @@ Using CRT:
 \prod_i \mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-the global phase space factorizes into local modular components.
+the phase space factorizes into local modular coordinate systems.
 
-Each component contributes an independent dynamical direction.
-
----
-
-# 5. Toroidal Structure
-
-Because each component evolves cyclically, the full space behaves like a discrete toroidal geometry.
-
-This creates:
-
-- periodic coordinates
-- closed orbital directions
-- recurrent spatial structure
-
-inside the phase space.
+Each coordinate evolves independently.
 
 ---
 
-# 6. Attractor Basins
+# 5. Orbital Structure
+
+Finite phase spaces contain:
+
+- transient orbital trees
+- periodic cycles
+- recurrent cores
+- asymptotic sectors
+- basin topology
+
+inside directed modular flow geometry.
+
+---
+
+# 6. Basin Partitioning
 
 The operator:
 
@@ -105,21 +92,15 @@ The operator:
 \Phi(x)
 \]
 
-partitions the space into asymptotic basins.
+partitions the phase space into asymptotic attractor sectors.
 
-Each basin corresponds to:
-
-- an idempotent attractor
-- a stable asymptotic region
-- a global dynamical sector
-
-within the modular geometry.
+Each sector contains states sharing common long-term dynamical organization.
 
 ---
 
 # 7. Torsional Regions
 
-Periodic orbital cycles define torsional structures.
+Periodic cycles generate localized torsional structure.
 
 The torsion vector:
 
@@ -127,38 +108,66 @@ The torsion vector:
 \vec{\tau}(x)
 \]
 
-describes local cyclic organization inside the phase space.
+captures recurrent cyclic organization within the phase space.
 
 ---
 
-# 8. Computational Interpretation
+# 8. Toroidal Interpretation
 
-The phase-space viewpoint transforms modular arithmetic into:
+CRT-local cyclic coordinates induce toroidal phase structure including:
 
-- geometric flow
-- attractor navigation
-- orbital classification
-- spatially distributed dynamics
+- periodic directions
+- wrapped orbital geometry
+- recurrent modular manifolds
+- cyclic spatial closure
 
-rather than purely symbolic computation.
-
----
-
-# 9. Visualization Potential
-
-Finite phase spaces may be visualized through:
-
-- toroidal projections
-- basin maps
-- orbital atlases
-- graph embeddings
-- phase topology diagrams
+inside finite state evolution.
 
 ---
 
-# 10. Research Status
+# 9. Functional Graph Representation
 
-The finite phase-space interpretation remains exploratory.
+The functional graph:
 
-Its practical implications for computation, hardware, and learning systems remain open research questions.
+\[
+\mathcal{G}_{n,k}
+\]
+
+encodes the complete phase-space dynamics through directed edges:
+
+\[
+x \to f_k(x)
+\]
+
+---
+
+# 10. Computational Interpretation
+
+Finite phase spaces suggest computational models based on:
+
+- orbital evolution
+- attractor routing
+- asymptotic classification
+- distributed modular dynamics
+- finite-state geometry
+
+rather than only symbolic arithmetic transformation.
+
+---
+
+# 11. Open Questions
+
+Major unresolved issues include:
+
+- topological invariants
+- spectral structure
+- geometric formalization
+- scaling behavior
+- computational usefulness
+
+---
+
+# 12. Research Status
+
+Finite phase-space interpretation remains an exploratory component of the MDST framework.
 
