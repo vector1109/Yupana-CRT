@@ -2,37 +2,45 @@
 
 ## Overview
 
-This document specifies the conceptual definition of the Φ operator used throughout MDST and Yupana CRT.
+This document summarizes the conceptual specification of the asymptotic classification operator:
 
-The operator performs asymptotic attractor classification over modular dynamical systems without explicit iterative simulation.
+\[
+\Phi(x)
+\]
+
+within the MDST and Yupana CRT framework.
+
+The operator is intended to classify modular states according to asymptotic attractor structure without requiring explicit long-term iteration.
 
 ---
 
 # 1. Dynamical Context
 
-Consider the modular dynamical system:
+Consider the modular map:
 
 \[
 f_k(x)=x^k \bmod n
 \]
 
-defined over:
+acting over:
 
 \[
 \mathbb{Z}_n
 \]
 
-with CRT decomposition:
-
-\[
-n=\prod_i p_i^{\alpha_i}
-\]
+Repeated application generates finite asymptotic dynamics.
 
 ---
 
 # 2. CRT Decomposition
 
-The ring decomposes as:
+Let:
+
+\[
+n=\prod_i p_i^{\alpha_i}
+\]
+
+Then:
 
 \[
 \mathbb{Z}_n
@@ -40,7 +48,7 @@ The ring decomposes as:
 \prod_i \mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-Each state becomes:
+A state decomposes into local CRT coordinates:
 
 \[
 x
@@ -50,98 +58,74 @@ x
 
 ---
 
-# 3. Local Classification Rule
+# 3. Local Classification
 
 For each CRT component define:
 
 \[
-\phi_i(x_i)=
-\begin{cases}
-0 & \text{if } p_i \mid x_i \\
-1 & \text{otherwise}
-\end{cases}
+\phi_i(x_i)
 \]
 
-This produces a binary local asymptotic descriptor.
+as a local asymptotic classifier.
+
+Conceptually, the classifier determines whether local evolution converges toward:
+
+\[
+0
+\]
+
+or:
+
+\[
+1
+\]
+
+inside the corresponding modular factor.
 
 ---
 
-# 4. Global Φ Operator
+# 4. Global Operator
 
-The global operator is defined as:
+The global asymptotic classifier is defined conceptually as:
 
 \[
 \Phi(x)
 =
-CRT(
-\phi_1(x_1),
-\dots,
-\phi_r(x_r)
-)
+CRT(\phi_1(x_1),\dots,\phi_r(x_r))
 \]
 
-where reconstruction occurs through CRT isomorphism.
+This maps states into idempotent asymptotic sectors.
 
 ---
 
 # 5. Interpretation
 
-The operator maps each state into its asymptotic attractor class.
+The operator acts as a basin classifier describing:
 
-Conceptually:
+- asymptotic destination
+- attractor membership
+- basin organization
+- large-scale orbital structure
+
+inside modular phase space.
+
+---
+
+# 6. Relationship to Idempotents
+
+The image of:
 
 \[
 \Phi(x)
 \]
 
-acts as a basin projection operator.
+consists of idempotent elements.
+
+These idempotents act as asymptotic anchors for modular evolution.
 
 ---
 
-# 6. Dynamical Meaning
-
-The classification identifies:
-
-- attractor basin membership
-- asymptotic idempotent structure
-- large-scale orbital behavior
-
-without requiring explicit orbit traversal.
-
----
-
-# 7. Computational Properties
-
-Potential computational properties include:
-
-- branch-free evaluation
-- constant-depth classification
-- CRT-local execution
-- deterministic behavior
-
-depending on implementation.
-
----
-
-# 8. Relation to Idempotents
-
-The image of:
-
-\[
-\Phi
-\]
-
-lies within the set of idempotent elements of:
-
-\[
-\mathbb{Z}_n
-\]
-
-These idempotents act as asymptotic structural attractors.
-
----
-
-# 9. Relationship to Torsion
+# 7. Relationship to Torsion
 
 The operator:
 
@@ -149,7 +133,7 @@ The operator:
 \Phi(x)
 \]
 
-captures coarse asymptotic structure.
+captures coarse asymptotic classification.
 
 The torsion vector:
 
@@ -157,21 +141,41 @@ The torsion vector:
 \vec{\tau}(x)
 \]
 
-captures internal periodic organization.
+captures finer recurrent orbital structure within each basin.
 
-Together they define a richer dynamical descriptor.
+Together they form a layered asymptotic descriptor.
+
+---
+
+# 8. Computational Interpretation
+
+Potential speculative computational interpretations include:
+
+- asymptotic routing
+- attractor-oriented execution
+- basin classification hardware
+- structural dynamical computation
+
+These interpretations remain exploratory.
+
+---
+
+# 9. Open Problems
+
+Major unresolved questions include:
+
+- formal proof structure
+- uniqueness properties
+- computational complexity
+- spectral interpretation
+- categorical formulation
+- hardware realizability
 
 ---
 
 # 10. Current Status
 
-The Φ operator is partially formalized.
+The Φ operator remains partially formalized and experimentally unvalidated.
 
-Future work includes:
-
-- rigorous theorem development
-- proof formalization
-- complexity analysis
-- categorical interpretation
-- spectral characterization
+Its ultimate mathematical and computational significance remains unknown.
 
