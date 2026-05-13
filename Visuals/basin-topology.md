@@ -2,15 +2,15 @@
 
 ## Overview
 
-This document describes the topological interpretation of attractor basins inside modular dynamical systems.
+This document describes basin topology inside the MDST and Yupana CRT framework.
 
-Within MDST and Yupana CRT, asymptotic modular behavior is interpreted geometrically as a partitioned finite topology.
+The modular phase space is interpreted as a finite dynamical geometry partitioned into asymptotic attractor basins.
 
 ---
 
 # 1. Dynamical Context
 
-Consider:
+Consider the modular transformation:
 
 \[
 f_k(x)=x^k \bmod n
@@ -22,56 +22,34 @@ acting over:
 \mathbb{Z}_n
 \]
 
-The resulting finite dynamical system generates asymptotic structures throughout the modular state space.
+Repeated evolution generates asymptotic organization throughout the finite phase space.
 
 ---
 
 # 2. Basin Definition
 
-For an attractor:
+A basin is the set of states whose trajectories converge toward the same asymptotic attractor.
 
-\[
-a
-\]
-
-define its basin as:
-
-\[
-B(a)
-=
-\{
-x \in \mathbb{Z}_n :
-f_k^{(t)}(x)\to a
-\}
-\]
-
-where:
-
-\[
-f_k^{(t)}
-\]
-
-denotes repeated iteration.
+Basins partition the modular phase space into dynamical regions.
 
 ---
 
-# 3. Φ-Induced Partition
+# 3. Attractor Structure
 
-The operator:
+Attractors may include:
 
-\[
-\Phi(x)
-\]
+- fixed points
+- periodic cycles
+- recurrent orbital cores
+- torsional regions
 
-partitions the full modular space into basin regions.
-
-Each state belongs to exactly one asymptotic sector.
+inside the modular geometry.
 
 ---
 
-# 4. CRT Basin Structure
+# 4. CRT Basin Decomposition
 
-Under CRT decomposition:
+Using CRT:
 
 \[
 \mathbb{Z}_n
@@ -79,84 +57,107 @@ Under CRT decomposition:
 \prod_i \mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-global basin topology emerges from the product of local basin structures.
+global basins emerge from combinations of local modular asymptotic sectors.
 
-Each modular component contributes independently to the final partition.
-
----
-
-# 5. Topological Interpretation
-
-The basin structure induces:
-
-- asymptotic regions
-- directed flow domains
-- orbital funnels
-- stable geometric sectors
-
-inside the modular phase space.
+Each CRT component contributes independently to basin organization.
 
 ---
 
-# 6. Boundary Structure
+# 5. Φ-Based Classification
 
-Transitions between basins correspond to changes in local modular divisibility structure.
+The operator:
 
-These boundaries are algebraically generated rather than spatially continuous.
+\[
+\Phi(x)
+\]
 
----
+acts conceptually as a basin classifier.
 
-# 7. Basin Depth
-
-Transient orbital trees define basin depth.
-
-Depth corresponds to the number of dynamical transitions required before entering asymptotic structure.
+States with identical asymptotic classification belong to the same coarse basin sector.
 
 ---
 
-# 8. Torsional Subregions
+# 6. Basin Boundaries
 
-Inside basins, periodic orbital cycles create torsional substructures.
+The modular phase space contains transitions between asymptotic sectors including:
 
-These define:
+- orbital separatrices
+- transient corridors
+- recurrent interfaces
+- phase transitions
 
-- recurrent regions
-- phase-aligned domains
-- orbital loops
-- cyclic topology
-
-within the basin geometry.
+inside finite dynamical geometry.
 
 ---
 
-# 9. Visualization Possibilities
+# 7. Torsional Subregions
 
-Basin topology may be visualized through:
+Within basins, periodic orbital behavior generates localized torsional organization.
 
-- attractor atlases
-- orbital embeddings
-- directed graph layouts
-- toroidal projections
-- phase-space maps
+The torsion vector:
+
+\[
+\vec{\tau}(x)
+\]
+
+captures cyclic recurrent structure inside basin interiors.
+
+---
+
+# 8. Functional Graph Interpretation
+
+Inside the functional graph:
+
+\[
+\mathcal{G}_{n,k}
+\]
+
+basins correspond to connected regions feeding into common attractors.
+
+The graph topology encodes the full basin structure.
+
+---
+
+# 9. Geometric Interpretation
+
+Basin topology suggests a geometric interpretation involving:
+
+- asymptotic partitions
+- orbital flow regions
+- toroidal recurrence
+- recurrent manifolds
+- directed phase geometry
+
+inside modular state space.
 
 ---
 
 # 10. Computational Interpretation
 
-The basin topology viewpoint suggests that modular dynamics may be interpreted through:
+The basin viewpoint suggests computational models based on:
 
-- asymptotic geometry
+- asymptotic routing
 - structural classification
-- orbital partitioning
-- spatial dynamical organization
+- orbital convergence
+- finite-state partitioning
 
-rather than only sequential iteration.
+rather than explicit iterative arithmetic traversal.
 
 ---
 
-# 11. Research Status
+# 11. Open Questions
 
-The topological interpretation remains exploratory.
+Major unresolved questions include:
 
-Many questions regarding basin geometry, scaling behavior, and computational usefulness remain unresolved.
+- topological invariants
+- spectral properties
+- scaling behavior
+- computational usefulness
+- rigorous geometric formalization
+
+---
+
+# 12. Research Status
+
+Basin topology remains an exploratory geometric interpretation of modular dynamical systems.
 
