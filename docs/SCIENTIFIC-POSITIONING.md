@@ -4,171 +4,148 @@
 
 This document clarifies the current scientific positioning of the MDST and Yupana CRT framework.
 
-The purpose is to distinguish clearly between:
-
-- established mathematics
-- conceptual synthesis
-- speculative interpretation
-- experimental hypotheses
-- unresolved research directions
+The goal is to distinguish exploratory conceptual investigation from validated scientific claims.
 
 ---
 
-# 1. Nature of the Project
+# 1. Current Nature of the Framework
 
-MDST and Yupana CRT should currently be understood as:
+MDST and Yupana CRT currently function primarily as:
 
-- exploratory research frameworks
-- conceptual computational investigations
-- partially formalized mathematical systems
-- speculative architecture proposals
+- exploratory mathematical syntheses
+- speculative computational hypotheses
+- finite dynamical systems investigations
+- conceptual architectural research directions
 
-rather than established computational technologies.
+rather than established scientific theories.
 
 ---
 
-# 2. Relationship to Existing Mathematics
+# 2. Mathematical Foundation
 
-The framework builds upon established mathematical foundations including:
+The framework builds upon legitimate mathematical domains including:
 
 - modular arithmetic
-- finite rings
 - Chinese Remainder Theorem
-- functional graph theory
 - finite dynamical systems
-- asymptotic orbital structure
+- functional graph theory
+- recurrence structure
+- asymptotic dynamics
 
-These subjects are classical mathematics.
-
----
-
-# 3. Potentially Original Contributions
-
-Potentially original aspects may include:
-
-- unified CRT dynamical interpretation
-- asymptotic classification operators
-- torsional orbital descriptors
-- basin-oriented modular geometry
-- computational reinterpretation of modular dynamics
-- CRT-local execution architectures
-
-A definitive originality claim requires broader literature analysis.
+However, many higher-level interpretations remain heuristic.
 
 ---
 
-# 4. Current Level of Validation
+# 3. Conceptual Extensions
 
-The framework currently lacks:
+Concepts including:
 
-- rigorous proof completion
-- formal peer review
-- benchmark evaluation
-- FPGA implementation
-- ASIC validation
-- large-scale simulation evidence
-- empirical computational comparison
+- orbital manifolds
+- torsion vectors
+- asymptotic routing
+- basin-oriented computation
+- recurrent modular fabrics
+- orbital execution systems
 
-Therefore all computational claims remain provisional.
+are exploratory interpretive constructs rather than established mathematical objects.
 
 ---
 
-# 5. Computational Claims
+# 4. Computational Claims
 
 The framework does NOT currently demonstrate:
 
-- superiority over binary arithmetic
-- practical AI acceleration
-- faster general computation
-- hardware efficiency advantages
-- scalable industrial usefulness
+- superior computational efficiency
+- faster arithmetic execution
+- AI breakthroughs
+- universal hardware advantages
+- replacement of conventional architectures
 
-Such claims would require substantial future validation.
-
----
-
-# 6. Conceptual Value
-
-Even without practical success, the framework may still possess scientific value because it:
-
-- organizes multiple mathematical ideas coherently
-- generates new research questions
-- introduces alternative computational viewpoints
-- connects algebra and dynamics structurally
-- exposes finite asymptotic geometry explicitly
+No validated benchmark evidence currently supports such claims.
 
 ---
 
-# 7. Hardware Interpretation
+# 5. Hardware Position
 
-The hardware layer should currently be interpreted as:
+Hardware interpretations remain speculative.
 
-- conceptual mapping
-- speculative architecture exploration
-- theoretical execution modeling
+No validated implementations currently exist for:
 
-rather than deployable engineering.
-
----
-
-# 8. AI Interpretation
-
-The AI-related language inside the framework remains speculative.
-
-No demonstrated learning architecture currently exists.
-
-No neural benchmark evidence currently exists.
+- orbital processors
+- basin-routing fabrics
+- modular recurrence engines
+- phase-aligned execution arrays
+- attractor-oriented hardware systems
 
 ---
 
-# 9. Geometric Language
+# 6. Scientific Maturity
 
-Terms such as:
+The framework currently lacks:
 
-- toroidal geometry
-- orbital manifolds
-- basin topology
-- asymptotic sectors
-
-should currently be interpreted as conceptual geometric metaphors unless rigorously formalized mathematically.
-
----
-
-# 10. Appropriate Scientific Framing
-
-The framework is most appropriately described as:
-
-- a research hypothesis
-- an exploratory synthesis
-- a speculative computational framework
-- a modular dynamical systems investigation
-
-rather than a completed scientific theory.
-
----
-
-# 11. Future Requirements
-
-Scientific maturation would require:
-
-- rigorous theorem development
-- formal notation standardization
-- literature comparison
-- reproducible experiments
-- hardware prototypes
-- independent verification
+- formal proofs
+- rigorous invariant theory
 - peer-reviewed publication
+- independent replication
+- hardware prototypes
+- reproducible benchmark evaluation
+
+Scientific maturity therefore remains early-stage.
 
 ---
 
-# 12. Final Position
+# 7. Appropriate Interpretation
 
-At present, MDST and Yupana CRT occupy a position between:
+The framework is most appropriately interpreted as:
 
-- abstract mathematics
-- finite dynamical systems research
-- unconventional computation
-- speculative architecture exploration
+- a conceptual research program
+- a finite dynamical systems exploration
+- a speculative computational philosophy
+- an organizational mathematical synthesis
 
-with substantial future work still required before stronger conclusions are justified.
+rather than a finalized scientific theory.
+
+---
+
+# 8. Research Value
+
+Potential value currently lies in:
+
+- generating research questions
+- organizing modular dynamical ideas
+- motivating formal investigation
+- encouraging unconventional perspectives
+- exploring finite-state recurrence
+
+even if practical applications ultimately fail.
+
+---
+
+# 9. Scientific Prudence
+
+Negative outcomes remain scientifically possible.
+
+The framework may ultimately become:
+
+- a mathematical curiosity
+- a visualization methodology
+- a conceptual synthesis
+- a limited specialized tool
+- a negative-result research direction
+
+rather than a transformative architecture.
+
+---
+
+# 10. Final Position
+
+At present, MDST and Yupana CRT should be viewed as:
+
+- exploratory
+- speculative
+- partially formalized
+- experimentally unvalidated
+- conceptually ambitious
+
+with substantial scientific work remaining open.
 
