@@ -2,173 +2,157 @@
 
 ## Overview
 
-This document describes the organizational structure of the Yupana CRT repository.
+This document summarizes the organizational structure of the MDST and Yupana CRT repository.
 
-The repository is divided into conceptual domains reflecting the separation between:
-
-- theory
-- computational models
-- hardware interpretation
-- visualization
-- specifications
-- examples
-- research documentation
+The repository is organized around exploratory theoretical, computational, visual, and architectural research domains.
 
 ---
 
 # 1. Core/
 
-The Core/ directory contains documents related to execution principles and computational interpretation.
+Contains central conceptual computational interpretations.
 
-Typical contents include:
+Typical topics include:
 
-- CRT-local execution
-- modular state evolution
-- distributed modular processing
-- execution flow concepts
-- lookup-driven computation
+- attractor-oriented computation
+- recurrent state routing
+- orbital information flow
+- asymptotic execution concepts
+- modular dynamical coordination
 
-This directory focuses on computational mechanisms.
+These documents are conceptual and exploratory.
 
 ---
 
 # 2. Theory/
 
-The Theory/ directory contains mathematical and dynamical interpretations.
+Contains exploratory mathematical and dynamical systems investigations.
 
-Topics include:
+Typical topics include:
 
-- attractor geometry
-- finite phase spaces
-- torsion dynamics
-- functional graphs
-- idempotent structures
-- CRT dynamical decomposition
+- modular recurrence topology
+- cyclic orbital decomposition
+- orbital recurrence spectra
+- asymptotic invariants
+- recurrent modular symmetries
+- toroidal phase geometry
 
-This directory forms the conceptual mathematical layer.
+Most theoretical constructs remain partially formalized.
 
 ---
 
 # 3. Hardware/
 
-The Hardware/ directory contains speculative hardware-oriented interpretations.
+Contains speculative hardware-oriented interpretations.
 
-Topics include:
+Typical topics include:
 
-- FPGA concepts
-- modular routing fabrics
-- spatial execution architectures
-- distributed modular systems
-- ASIC-oriented ideas
+- distributed basin processors
+- asymptotic routing fabrics
+- orbital systolic networks
+- CRT-local memory fabrics
+- phase synchronization systems
+- modular execution arrays
 
-No physical implementation currently exists.
+No validated hardware implementation currently exists.
 
 ---
 
 # 4. Visuals/
 
-The Visuals/ directory contains geometric and visualization-oriented interpretations.
+Contains geometric and visualization-oriented interpretations.
 
-Topics include:
+Typical topics include:
 
-- orbital structures
-- basin topology
-- CRT phase atlases
-- toroidal geometry
-- attractor embeddings
+- orbital transition zones
+- basin geometry
+- recurrent flow visualization
+- toroidal phase structure
+- asymptotic orbital organization
 
-This directory emphasizes spatial and geometric viewpoints.
-
----
-
-# 5. Specs/
-
-The Specs/ directory contains conceptual specifications for core framework operators.
-
-Topics include:
-
-- Φ operator
-- torsion vectors
-- asymptotic classification
-- orbital descriptors
-
-Specifications remain partially formalized.
+These visual interpretations remain heuristic.
 
 ---
 
-# 6. Examples/
+# 5. docs/
 
-The Examples/ directory contains illustrative demonstrations.
+Contains repository-wide documentation including:
 
-These examples are intended to:
+- terminology
+- scientific positioning
+- research methodology
+- formalization gaps
+- open problems
+- repository structure
 
-- clarify concepts
-- demonstrate modular decomposition
-- visualize attractor structure
-- illustrate orbital dynamics
-
-Examples are educational rather than exhaustive.
-
----
-
-# 7. docs/
-
-The docs/ directory contains broader project documentation.
-
-Topics include:
-
-- research positioning
-- AI evaluation
-- hardware implications
-- unresolved questions
-- future research directions
-- project philosophy
-
-This directory provides scientific context.
+This directory defines the conceptual boundaries of the framework.
 
 ---
 
-# 8. Visual Organization Philosophy
+# 6. Experimental Nature
+
+Most repository contents should currently be interpreted as:
+
+- exploratory
+- partially formalized
+- experimentally unvalidated
+- conceptually motivated
+
+rather than established scientific theory.
+
+---
+
+# 7. Recommended Reading Order
+
+A suggested reading order is:
+
+1. docs/SCIENTIFIC-POSITIONING.md
+2. docs/RESEARCH-METHODOLOGY.md
+3. docs/TERMINOLOGY.md
+4. Theory/
+5. Core/
+6. Hardware/
+7. Visuals/
+
+This progression moves from conceptual framing toward speculative architectural interpretations.
+
+---
+
+# 8. Research Philosophy
 
 The repository intentionally separates:
 
-- mathematics
-- architecture
-- geometry
-- hardware speculation
-- computational interpretation
+- formal mathematical structure
+- speculative interpretation
+- architectural hypothesis
+- visualization methodology
 
-to preserve conceptual clarity.
-
----
-
-# 9. Current Repository Status
-
-The repository currently functions primarily as:
-
-- a research notebook
-- a conceptual framework archive
-- an exploratory computational proposal
-- a partially formalized theoretical system
-
-rather than a production software library.
+to maintain scientific clarity.
 
 ---
 
-# 10. Future Evolution
+# 9. Scientific Status
 
-Possible future additions include:
+The repository currently lacks:
 
-- reference implementations
-- FPGA experiments
-- visualization tools
-- benchmark systems
-- theorem formalization
-- simulation frameworks
+- formal proofs
+- peer-reviewed publication
+- benchmark validation
+- hardware prototypes
+- independent replication
+
+Scientific maturity therefore remains early-stage.
 
 ---
 
-# 11. Research Status
+# 10. Final Perspective
 
-The repository remains exploratory and under active conceptual development.
+The repository should currently be viewed as:
+
+- an exploratory modular dynamical systems research program
+- a speculative computational investigation
+- a conceptual architectural framework
+- an evolving formalization effort
+
+with substantial scientific work remaining open.
 
