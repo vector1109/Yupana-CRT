@@ -4,204 +4,180 @@
 
 This document summarizes major known limitations of the MDST and Yupana CRT framework.
 
-The purpose is to explicitly identify weaknesses, uncertainties, and unresolved implementation barriers.
+The framework remains exploratory and should not currently be interpreted as a validated computational or scientific system.
 
 ---
 
-# 1. Mathematical Limitations
+# 1. Lack of Formal Proofs
 
-## 1.1 Incomplete Formalization
+Most higher-level concepts currently lack:
 
-Several core concepts remain only partially formalized, including:
+- rigorous proofs
+- formal invariant theory
+- uniqueness guarantees
+- asymptotic correctness analysis
+- topological formalization
 
-- torsion descriptors
-- asymptotic classification operators
-- basin geometry
-- orbital topology
-- toroidal interpretations
-
----
-
-## 1.2 Lack of Rigorous Proofs
-
-Many framework claims currently lack:
-
-- formal proofs
-- complete derivations
-- uniqueness theorems
-- asymptotic guarantees
-- complexity analysis
+Many interpretations remain heuristic.
 
 ---
 
-## 1.3 Incomplete Literature Review
+# 2. Partial Mathematical Formalization
 
-A full comparison against existing research in:
+Objects including:
 
-- finite dynamical systems
-- residue number systems
-- functional graph theory
-- modular computation
-- algebraic dynamics
+\[
+\Phi(x)
+\]
 
-has not yet been completed.
+and
 
----
+\[
+\vec{\tau}(x)
+\]
 
-# 2. Computational Limitations
+remain incompletely defined.
 
-## 2.1 No Performance Evidence
-
-No benchmarks currently demonstrate:
-
-- speed advantages
-- memory advantages
-- energy advantages
-- latency improvements
-
-over conventional architectures.
+Core structural definitions are still evolving.
 
 ---
 
-## 2.2 Lookup Table Growth
-
-Lookup-driven execution may scale poorly.
-
-Large modular systems may require impractically large memory structures.
-
----
-
-## 2.3 Reconstruction Overhead
-
-CRT recombination may introduce substantial overhead that eliminates any local execution advantage.
-
----
-
-## 2.4 Unknown Complexity Behavior
-
-The computational complexity of many proposed operations remains unclear.
-
----
-
-# 3. Hardware Limitations
-
-## 3.1 No FPGA Implementation
-
-No validated FPGA implementation currently exists.
-
-All hardware discussions remain speculative.
-
----
-
-## 3.2 No ASIC Validation
-
-No silicon implementation or fabrication study has been performed.
-
----
-
-## 3.3 Routing Complexity
-
-Distributed modular routing may become impractical at larger scales.
-
-Potential issues include:
-
-- congestion
-- synchronization cost
-- communication overhead
-- floorplanning difficulty
-
----
-
-## 3.4 Unknown Energy Efficiency
-
-Claims regarding efficiency remain hypothetical.
-
-No physical measurements currently exist.
-
----
-
-# 4. AI and Neural Limitations
-
-## 4.1 No Learning Algorithm
+# 3. No Benchmark Validation
 
 The framework currently lacks:
 
-- training methods
-- optimization procedures
-- gradient mechanisms
-- scalable adaptation systems
+- reproducible performance benchmarks
+- complexity comparisons
+- efficiency measurements
+- scalability evaluations
+- empirical computational studies
+
+No superiority claims can presently be justified.
 
 ---
 
-## 4.2 No Empirical AI Results
+# 4. Speculative Hardware Layer
 
-No practical AI tasks have been demonstrated.
+Hardware concepts including:
 
-No inference benchmarks currently exist.
+- orbital processors
+- basin-routing fabrics
+- modular recurrence engines
+- asymptotic routing arrays
+- orbital memory systems
 
----
+remain speculative architectural interpretations.
 
-## 4.3 Unknown Expressiveness
-
-It remains unknown whether modular dynamical systems possess sufficient representational capacity for modern AI workloads.
-
----
-
-# 5. Geometric Limitations
-
-## 5.1 Visualization Scalability
-
-Large modular phase spaces become difficult to visualize or interpret geometrically.
+No validated hardware implementation currently exists.
 
 ---
 
-## 5.2 Topological Ambiguity
+# 5. Limited Computational Semantics
 
-Many geometric interpretations remain heuristic rather than rigorously defined.
+The framework lacks rigorous definitions for:
 
----
+- orbital computation
+- attractor-oriented execution
+- asymptotic routing semantics
+- recurrent state processing
+- modular execution logic
 
-# 6. Scientific Limitations
-
-## 6.1 No Peer Review
-
-The framework has not yet undergone formal peer review.
-
----
-
-## 6.2 No Independent Validation
-
-Independent implementations and verification are currently absent.
+Computational interpretation remains conceptual.
 
 ---
 
-## 6.3 Exploratory Status
+# 6. Scaling Uncertainty
 
-The framework remains:
+The scaling behavior of recurrent modular systems remains poorly understood.
 
-- conceptual
+Open concerns include:
+
+- LUT explosion
+- synchronization overhead
+- routing complexity
+- memory growth
+- graph density expansion
+
+---
+
+# 7. Visualization Heuristics
+
+Geometric interpretations including:
+
+- orbital manifolds
+- toroidal phase geometry
+- basin landscapes
+- orbital flow fields
+
+are conceptual visualization tools rather than established geometric constructions.
+
+---
+
+# 8. No Peer-Reviewed Validation
+
+The framework currently lacks:
+
+- peer-reviewed publication
+- independent verification
+- academic replication
+- external validation
+- formal scientific adoption
+
+Scientific maturity therefore remains early-stage.
+
+---
+
+# 9. Unknown Practical Utility
+
+It remains possible that the framework ultimately provides:
+
+- limited applicability
+- niche usefulness
+- visualization benefits only
+- mathematical curiosity value
+- negative research results
+
+rather than transformative computational capability.
+
+---
+
+# 10. AI and Learning Limitations
+
+The framework currently lacks:
+
+- validated training algorithms
+- optimization theory
+- learning guarantees
+- benchmarked AI architectures
+- practical inference systems
+
+No AI superiority claims are currently justified.
+
+---
+
+# 11. Scientific Prudence
+
+The framework should currently be interpreted as:
+
+- exploratory
 - speculative
-- experimentally incomplete
+- partially formalized
+- experimentally unvalidated
+- conceptually ambitious
 
-rather than established computational science.
-
----
-
-# 7. Risk of Overinterpretation
-
-The geometric and architectural language used throughout the framework may appear more mature than the current level of validation actually supports.
-
-Readers should interpret all hardware and AI implications cautiously.
+rather than scientifically established.
 
 ---
 
-# 8. Current Position
+# 12. Final Perspective
 
-At present, MDST and Yupana CRT should be viewed primarily as:
+The primary current value of the framework lies in:
 
-- exploratory mathematical synthesis
-- conceptual computational research
-- speculative architectural investigation
+- generating research questions
+- organizing modular dynamical ideas
+- motivating formal investigation
+- exploring unconventional perspectives
+- stimulating experimental analysis
 
-with substantial future validation still required.
+with substantial uncertainty remaining unresolved.
 
