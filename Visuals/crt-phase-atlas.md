@@ -4,31 +4,33 @@
 
 This document describes the concept of a CRT phase atlas within the MDST and Yupana CRT framework.
 
-The atlas interpretation treats modular dynamical systems as structured finite geometries partitioned into asymptotic regions.
+The framework interprets CRT decomposition as a system of local dynamical coordinate charts covering finite modular phase spaces.
 
 ---
 
-# 1. Phase Space Foundation
+# 1. Modular Phase Space
 
-Consider the modular dynamical system:
-
-\[
-f_k(x)=x^k \bmod n
-\]
-
-defined over:
+Consider the finite modular ring:
 
 \[
 \mathbb{Z}_n
 \]
 
-The finite ring acts as a discrete phase space.
+interpreted as a discrete dynamical phase space.
+
+Repeated modular evolution generates orbital structure throughout the space.
 
 ---
 
-# 2. CRT Coordinate System
+# 2. CRT Decomposition
 
-Using CRT decomposition:
+Given:
+
+\[
+n=\prod_i p_i^{\alpha_i}
+\]
+
+CRT yields:
 
 \[
 \mathbb{Z}_n
@@ -36,33 +38,66 @@ Using CRT decomposition:
 \prod_i \mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-each state acquires coordinates:
-
-\[
-x
-\leftrightarrow
-(x_1,x_2,\dots,x_r)
-\]
-
-inside a modular coordinate atlas.
+Each CRT component defines a local modular coordinate system.
 
 ---
 
 # 3. Atlas Interpretation
 
-The full modular system may be interpreted as a finite atlas composed of:
+The collection of CRT-local coordinate systems acts conceptually as a phase atlas.
 
-- local CRT charts
-- orbital regions
-- basin partitions
-- torsional subspaces
-- asymptotic sectors
-
-inside a structured discrete geometry.
+Each chart describes local dynamical behavior inside a modular subdomain.
 
 ---
 
-# 4. Basin Layers
+# 4. Local Coordinate Charts
+
+Each chart contains:
+
+- local orbital flow
+- recurrent cycles
+- basin organization
+- asymptotic sectors
+- torsional structure
+
+inside a CRT-local modular region.
+
+---
+
+# 5. Transition Structure
+
+CRT recombination acts conceptually as a transition mapping between local charts and global modular geometry.
+
+The global phase structure emerges from coordinated local organization.
+
+---
+
+# 6. Orbital Geometry
+
+The atlas contains:
+
+- orbital corridors
+- recurrent manifolds
+- asymptotic partitions
+- cyclic coordinate regions
+- basin topology
+
+inside finite dynamical geometry.
+
+---
+
+# 7. Toroidal Interpretation
+
+Because CRT coordinates evolve cyclically, local charts exhibit toroidal recurrent structure including:
+
+- wrapped orbital directions
+- periodic coordinate recurrence
+- cyclic flow geometry
+- recurrent phase closure
+
+---
+
+# 8. Basin Classification
 
 The operator:
 
@@ -70,36 +105,11 @@ The operator:
 \Phi(x)
 \]
 
-partitions the atlas into asymptotic regions associated with idempotent attractors.
-
-Each region acts as a stable dynamical sector.
+partitions the atlas into asymptotic sectors associated with attractor organization.
 
 ---
 
-# 5. Orbital Flow Maps
-
-The modular transformation:
-
-\[
-f_k
-\]
-
-induces directed flow throughout the atlas.
-
-This creates:
-
-- orbital pathways
-- recurrent loops
-- transient corridors
-- asymptotic funnels
-
-inside the finite geometry.
-
----
-
-# 6. Torsional Charts
-
-Periodic orbital structure generates localized torsional regions.
+# 9. Torsional Structure
 
 The torsion vector:
 
@@ -107,64 +117,49 @@ The torsion vector:
 \vec{\tau}(x)
 \]
 
-acts as a descriptor of cyclic organization inside each chart.
+captures recurrent cyclic organization inside local chart regions.
 
 ---
 
-# 7. Toroidal Geometry
+# 10. Functional Graph Interpretation
 
-Because CRT coordinates evolve cyclically, the atlas possesses toroidal structure.
+The functional graph:
 
-This produces:
+\[
+\mathcal{G}_{n,k}
+\]
 
-- periodic coordinate directions
-- recurrent orbital manifolds
-- cyclic spatial closure
-- modular phase recurrence
-
-throughout the system.
+encodes the atlas structure explicitly through directed orbital topology.
 
 ---
 
-# 8. Visualization Possibilities
+# 11. Computational Interpretation
 
-A CRT phase atlas may potentially be visualized through:
+The atlas viewpoint suggests computational paradigms based on:
 
-- basin maps
-- orbital embeddings
-- directed graph atlases
-- toroidal projections
-- asymptotic topology diagrams
+- distributed modular charts
+- local orbital evolution
+- asymptotic navigation
+- finite-state geometry
+- CRT-local execution
 
----
-
-# 9. Computational Interpretation
-
-The atlas viewpoint supports a computational interpretation based on:
-
-- geometric organization
-- asymptotic routing
-- modular locality
-- orbital classification
-- distributed dynamical flow
-
-instead of centralized sequential arithmetic.
+rather than centralized arithmetic alone.
 
 ---
 
-# 10. Open Questions
+# 12. Open Questions
 
-Unresolved issues include:
+Major unresolved issues include:
 
-- scaling behavior
-- topological invariants
-- visualization complexity
-- computational usefulness
 - geometric formalization
+- chart invariants
+- topological structure
+- scaling behavior
+- computational usefulness
 
 ---
 
-# 11. Research Status
+# 13. Research Status
 
-The CRT phase atlas remains an exploratory geometric interpretation of modular dynamical systems.
+CRT phase atlases remain an exploratory geometric interpretation of modular dynamical systems.
 
