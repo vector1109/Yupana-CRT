@@ -162,4 +162,13 @@ Experimental research prototype.
 
 # License
 
-MIT
+This repository uses a layered licensing model.
+
+## Code
+
+Core runtime and computational modules are licensed under MPL-2.0.
+
+## Theory and Documentation
+
+Conceptual and theoretical documentation are licensed under CC BY 4.0.
+
