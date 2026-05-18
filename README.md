@@ -326,3 +326,31 @@ Core runtime and computational modules are licensed under MPL-2.0.
 ## Theory and Documentation
 
 Conceptual and theoretical documentation are licensed under CC BY 4.0.
+
+---
+
+# Quick Start
+
+Install locally:
+
+```bash
+pip install -e .
+```
+
+Run tests:
+
+```bash
+pytest tests/python/test_runtime.py -v
+```
+
+Run runtime example:
+
+```bash
+python examples/basic_runtime.py
+```
+
+Run orbit analysis:
+
+```bash
+python examples/orbit_analysis.py
+```
