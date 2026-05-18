@@ -1,167 +1,119 @@
 # Yupana CRT
 
-## CRT-Based Computational Architecture for Modular Dynamical Systems
-
----
+Experimental modular computation and structural dynamics framework based on discrete circular spaces.
 
 ## Overview
 
-Yupana CRT is an exploratory computational architecture derived from the MDST (Modular Dynamical Systems Toolkit) theoretical framework.
+Yupana CRT explores computation over modular toroidal spaces using:
 
-The project investigates whether finite modular dynamics can be used as an alternative computational substrate based on:
+- Chinese Remainder decomposition
+- Circular metrics
+- Structural tension minimization (Ψ)
+- Discrete phase operators
+- Dynamic attractor fields
+- Resonant state evolution
 
-- CRT decomposition
-- local modular execution
-- table-driven dynamics
-- non-iterative attractor classification
-- torsion-aware state evolution
+The project combines:
+
+- CRT positional computation
+- Modular orbital dynamics
+- Toroidal geometry
+- Variational structural optimization
 
 ---
 
-## Core Idea
+## Core Concepts
 
-Instead of representing computation through sequential binary arithmetic with carry propagation, Yupana CRT decomposes computation into independent modular channels.
+### CRT Space
 
-Given:
+States are represented over modular circular spaces:
 
 \[
-n=\prod_i p_i^{\alpha_i}
+(\mathbb{Z}_{60})^n
 \]
 
-a state is represented as:
+with natural circular distance:
 
 \[
-x \leftrightarrow (x_1,\dots,x_r)
+d(a,b)=\min(|a-b|,60-|a-b|)
 \]
 
-where each component evolves independently.
-
 ---
 
-## Architectural Principles
+### Φ Dynamics
 
-### CRT-Local Execution
-
-Each modular component executes independently through local transition tables.
-
----
-
-### Constant-Time Dynamics
-
-Execution uses precomputed local mappings:
+Deterministic orbital evolution:
 
 \[
-T_i[a]=f(a)
+x_{t+1}=x_t^k \pmod{60}
 \]
 
-avoiding iterative convergence loops.
+used for:
+
+- basin analysis
+- attractor discovery
+- modular recurrence structures
 
 ---
 
-### Phi Classification
+### Structural Tension Ψ
 
-The MDST operator:
+The runtime defines:
 
 \[
-\Phi(x)
+\Psi : \mathcal{S}\rightarrow\mathbb{R}
 \]
 
-acts as a direct attractor classifier without simulation.
+measuring structural incompatibility.
+
+Lower Ψ states are more coherent.
 
 ---
 
-### Modular Torsion
+### Runtime Dynamics
 
-Periodic orbital behavior introduces an additional dynamical structure:
+The scheduler evaluates operators and selects transitions minimizing:
 
 \[
-\vec{\tau}(x)
+\Delta\Psi
 \]
 
-representing modular torsion.
+creating emergent self-organization.
 
 ---
 
-## Research Areas
+## Current Modules
 
-### Computational Theory
+### CRT
 
-- modular dynamical systems
-- finite-state geometry
-- attractor computation
-- torsion-aware dynamics
-
----
-
-### Hardware Systems
-
-- FPGA architectures
-- ASIC feasibility
-- spatial modular execution
-- low-energy inference fabrics
+- residues
+- phi
+- metrics
+- field
+- psi
+- operators
+- scheduler
+- runtime
 
 ---
 
-### Visualization
+## Status
 
-- CRT toroidal geometry
-- functional graphs
-- basin atlases
-- torsion maps
+Experimental research framework.
+
+Not intended as:
+- physical theory
+- consciousness model
+- universal computation replacement
+
+Focused on:
+- modular dynamics
+- toroidal computation
+- structural optimization
+- attractor systems
 
 ---
 
-## Relationship to MDST
+## License
 
-MDST provides the mathematical foundation.
-
-Yupana CRT investigates possible computational realizations and hardware-oriented interpretations of those principles.
-
----
-
-## Repository Structure
-
-```text
-Yupana-CRT/
-├── Core/          # Execution primitives
-├── Hardware/      # Hardware architecture concepts
-├── Theory/        # Theoretical extensions
-├── Specs/         # Execution specifications
-├── Visuals/       # Visualization systems
-├── Examples/      # Canonical demonstrations
-├── docs/          # Vision and research notes
-└── README.md
-
-Current Status
-
-Exploratory research project.
-
-The architecture remains theoretical and experimental.
-
-No claims of practical superiority over classical or quantum systems are currently made.
-
-License
-
-Academic and research usage permitted under repository terms.
-
-Commercial, industrial, or proprietary implementations may require separate licensing agreements.
-
-See LICENSE for details.
-
-Author
-
-Fabian Dario Farias
-
-Related Project
-MDST — Modular Dynamical Systems Toolkit
-
-
-Luego:
-
-```powershell
-git add README.md
-
-git commit -m "Refine Yupana CRT repository identity"
-
-git push origin main
-
+MIT
