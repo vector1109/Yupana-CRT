@@ -2,157 +2,173 @@
 
 ## Overview
 
-This document summarizes the organizational structure of the MDST and Yupana CRT repository.
+This document describes the organizational structure of the Yupana CRT repository.
 
-The repository is organized around exploratory theoretical, computational, visual, and architectural research domains.
+The repository is divided into conceptual domains reflecting the separation between:
+
+- theory
+- computational models
+- hardware interpretation
+- visualization
+- specifications
+- examples
+- research documentation
 
 ---
 
 # 1. Core/
 
-Contains central conceptual computational interpretations.
+The Core/ directory contains documents related to execution principles and computational interpretation.
 
-Typical topics include:
+Typical contents include:
 
-- attractor-oriented computation
-- recurrent state routing
-- orbital information flow
-- asymptotic execution concepts
-- modular dynamical coordination
+- CRT-local execution
+- modular state evolution
+- distributed modular processing
+- execution flow concepts
+- lookup-driven computation
 
-These documents are conceptual and exploratory.
+This directory focuses on computational mechanisms.
 
 ---
 
 # 2. Theory/
 
-Contains exploratory mathematical and dynamical systems investigations.
+The Theory/ directory contains mathematical and dynamical interpretations.
 
-Typical topics include:
+Topics include:
 
-- modular recurrence topology
-- cyclic orbital decomposition
-- orbital recurrence spectra
-- asymptotic invariants
-- recurrent modular symmetries
-- toroidal phase geometry
+- attractor geometry
+- finite phase spaces
+- torsion dynamics
+- functional graphs
+- idempotent structures
+- CRT dynamical decomposition
 
-Most theoretical constructs remain partially formalized.
+This directory forms the conceptual mathematical layer.
 
 ---
 
 # 3. Hardware/
 
-Contains speculative hardware-oriented interpretations.
+The Hardware/ directory contains speculative hardware-oriented interpretations.
 
-Typical topics include:
+Topics include:
 
-- distributed basin processors
-- asymptotic routing fabrics
-- orbital systolic networks
-- CRT-local memory fabrics
-- phase synchronization systems
-- modular execution arrays
+- FPGA concepts
+- modular routing fabrics
+- spatial execution architectures
+- distributed modular systems
+- ASIC-oriented ideas
 
-No validated hardware implementation currently exists.
+No physical implementation currently exists.
 
 ---
 
 # 4. Visuals/
 
-Contains geometric and visualization-oriented interpretations.
+The Visuals/ directory contains geometric and visualization-oriented interpretations.
 
-Typical topics include:
+Topics include:
 
-- orbital transition zones
-- basin geometry
-- recurrent flow visualization
-- toroidal phase structure
-- asymptotic orbital organization
+- orbital structures
+- basin topology
+- CRT phase atlases
+- toroidal geometry
+- attractor embeddings
 
-These visual interpretations remain heuristic.
-
----
-
-# 5. docs/
-
-Contains repository-wide documentation including:
-
-- terminology
-- scientific positioning
-- research methodology
-- formalization gaps
-- open problems
-- repository structure
-
-This directory defines the conceptual boundaries of the framework.
+This directory emphasizes spatial and geometric viewpoints.
 
 ---
 
-# 6. Experimental Nature
+# 5. Specs/
 
-Most repository contents should currently be interpreted as:
+The Specs/ directory contains conceptual specifications for core framework operators.
 
-- exploratory
-- partially formalized
-- experimentally unvalidated
-- conceptually motivated
+Topics include:
 
-rather than established scientific theory.
+- Φ operator
+- torsion vectors
+- asymptotic classification
+- orbital descriptors
 
----
-
-# 7. Recommended Reading Order
-
-A suggested reading order is:
-
-1. docs/SCIENTIFIC-POSITIONING.md
-2. docs/RESEARCH-METHODOLOGY.md
-3. docs/TERMINOLOGY.md
-4. Theory/
-5. Core/
-6. Hardware/
-7. Visuals/
-
-This progression moves from conceptual framing toward speculative architectural interpretations.
+Specifications remain partially formalized.
 
 ---
 
-# 8. Research Philosophy
+# 6. Examples/
+
+The Examples/ directory contains illustrative demonstrations.
+
+These examples are intended to:
+
+- clarify concepts
+- demonstrate modular decomposition
+- visualize attractor structure
+- illustrate orbital dynamics
+
+Examples are educational rather than exhaustive.
+
+---
+
+# 7. docs/
+
+The docs/ directory contains broader project documentation.
+
+Topics include:
+
+- research positioning
+- AI evaluation
+- hardware implications
+- unresolved questions
+- future research directions
+- project philosophy
+
+This directory provides scientific context.
+
+---
+
+# 8. Visual Organization Philosophy
 
 The repository intentionally separates:
 
-- formal mathematical structure
-- speculative interpretation
-- architectural hypothesis
-- visualization methodology
+- mathematics
+- architecture
+- geometry
+- hardware speculation
+- computational interpretation
 
-to maintain scientific clarity.
-
----
-
-# 9. Scientific Status
-
-The repository currently lacks:
-
-- formal proofs
-- peer-reviewed publication
-- benchmark validation
-- hardware prototypes
-- independent replication
-
-Scientific maturity therefore remains early-stage.
+to preserve conceptual clarity.
 
 ---
 
-# 10. Final Perspective
+# 9. Current Repository Status
 
-The repository should currently be viewed as:
+The repository currently functions primarily as:
 
-- an exploratory modular dynamical systems research program
-- a speculative computational investigation
-- a conceptual architectural framework
-- an evolving formalization effort
+- a research notebook
+- a conceptual framework archive
+- an exploratory computational proposal
+- a partially formalized theoretical system
 
-with substantial scientific work remaining open.
+rather than a production software library.
+
+---
+
+# 10. Future Evolution
+
+Possible future additions include:
+
+- reference implementations
+- FPGA experiments
+- visualization tools
+- benchmark systems
+- theorem formalization
+- simulation frameworks
+
+---
+
+# 11. Research Status
+
+The repository remains exploratory and under active conceptual development.
 
