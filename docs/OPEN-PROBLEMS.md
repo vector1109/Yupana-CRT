@@ -4,11 +4,31 @@
 
 This document summarizes major unresolved problems within the MDST and Yupana CRT framework.
 
-Most aspects of the framework remain exploratory and partially formalized.
+The framework remains exploratory and many foundational mathematical, computational, and engineering questions remain open.
 
 ---
 
-# 1. Formal Definition of the Torsion Vector
+# 1. Basin Classification Formalization
+
+A rigorous definition for:
+
+\[
+\Phi(x)
+\]
+
+remains unresolved.
+
+Major open issues include:
+
+- uniqueness
+- invariance
+- computability
+- asymptotic stability
+- classification correctness
+
+---
+
+# 2. Torsion Vector Formalization
 
 The object:
 
@@ -16,179 +36,152 @@ The object:
 \vec{\tau}(x)
 \]
 
-currently lacks a universally rigorous formal definition.
+currently lacks:
 
-Open questions include:
-
-- uniqueness
-- invariance
-- scaling behavior
+- rigorous definition
+- invariant characterization
 - algebraic interpretation
-- topological significance
+- computational construction
+- asymptotic meaning
 
 ---
 
-# 2. Basin Classification Formalization
+# 3. Recurrence Invariant Theory
 
-The operator:
+No mature invariant framework currently exists for:
 
-\[
-\Phi(x)
-\]
+- recurrent cycles
+- basin sectors
+- orbital synchronization
+- asymptotic connectivity
+- cyclic organization
 
-remains partially heuristic.
-
-Open problems include:
-
-- rigorous construction
-- completeness
-- uniqueness guarantees
-- asymptotic invariants
-- efficient computation
+inside modular dynamical systems.
 
 ---
 
-# 3. Functional Graph Geometry
+# 4. Functional Graph Structure
 
-The geometric interpretation of:
+Major unresolved graph-theoretic questions include:
+
+- recurrent decomposition
+- spectral structure
+- asymptotic connectivity
+- graph scaling laws
+- transient organization
+
+inside:
 
 \[
 \mathcal{G}_{n,k}
 \]
 
-remains speculative.
+---
 
-Open questions include:
+# 5. Topological Formalization
 
-- manifold interpretation
-- topological invariants
-- spectral structure
-- homological characterization
-- graph decomposition theory
+Many geometric and topological concepts remain heuristic, including:
+
+- orbital manifolds
+- recurrence fields
+- basin landscapes
+- synchronization topology
+- flow geometry
+
+Rigorous definitions are still missing.
 
 ---
 
-# 4. Toroidal Phase Geometry
+# 6. CRT Coupling Theory
 
-Toroidal interpretations of CRT-local recurrence remain heuristic.
+Open questions remain regarding:
 
-Open questions include:
+- synchronization behavior
+- recurrence coordination
+- cyclic alignment
+- phase interaction
+- asymptotic coherence
 
-- rigorous geometric embedding
-- coordinate formalization
-- dynamical topology
-- cyclic manifold structure
-
----
-
-# 5. Orbital Flow Formalization
-
-Orbital flow fields currently lack rigorous dynamical formalization.
-
-Open questions include:
-
-- discrete flow theory
-- recurrence measures
-- asymptotic transport
-- orbital topology
-- finite-state dynamical metrics
+across CRT-local domains.
 
 ---
 
-# 6. Computational Usefulness
+# 7. Spectral Analysis
 
-No evidence currently demonstrates practical computational superiority.
+The framework lacks developed theory for:
 
-Critical unresolved questions include:
-
-- scalability
-- efficiency
-- memory overhead
-- reconstruction cost
-- workload applicability
+- graph eigenstructure
+- orbital spectra
+- recurrent modes
+- cyclic decomposition
+- asymptotic spectral organization
 
 ---
 
-# 7. Hardware Realizability
+# 8. Complexity Analysis
 
-The hardware layer remains entirely speculative.
+It remains unknown whether the framework provides:
 
-Open problems include:
+- computational advantages
+- routing improvements
+- memory efficiency
+- parallel scaling
+- asymptotic acceleration
 
-- FPGA routing scalability
-- LUT growth
-- synchronization overhead
-- timing closure
-- distributed memory coordination
+relative to conventional architectures.
+
+---
+
+# 9. Hardware Realizability
+
+Speculative hardware concepts currently lack validation regarding:
+
+- synchronization stability
+- timing correctness
+- fabrication feasibility
+- routing scalability
 - energy efficiency
+- fault tolerance
 
 ---
 
-# 8. Learning and AI Applications
+# 10. AI and Learning Applications
 
-No validated learning system currently exists.
+The framework currently lacks:
 
-Open questions include:
+- trainable architectures
+- optimization methods
+- benchmark validation
+- representational analysis
+- learning guarantees
 
-- trainability
-- representational usefulness
-- asymptotic learning dynamics
-- recurrent modular encoding
-- gradient analogues
-
----
-
-# 9. Spectral Structure
-
-The spectral properties of recurrent modular dynamics remain largely unexplored.
-
-Open questions include:
-
-- eigenstructure
-- graph spectra
-- asymptotic modes
-- recurrent decomposition
-- orbital harmonics
+No validated AI system currently exists.
 
 ---
 
-# 10. Asymptotic Invariants
+# 11. Scientific Validation
 
-Potential asymptotic invariants remain unknown.
+Major unresolved scientific requirements include:
 
-Open problems include:
-
-- basin invariants
-- recurrence invariants
-- orbital classification
-- structural equivalence
-- dynamical signatures
-
----
-
-# 11. Scaling Laws
-
-The scaling behavior of modular orbital systems remains poorly understood.
-
-Open questions include:
-
-- asymptotic complexity
-- recurrence growth
-- phase-space expansion
-- memory scaling
-- graph density behavior
-
----
-
-# 12. Scientific Validation
-
-The framework lacks:
-
-- peer-reviewed publication
+- formal proofs
+- peer review
+- reproducible experiments
 - independent replication
-- formal benchmarks
-- reproducible hardware prototypes
-- rigorous comparative evaluation
+- comparative benchmarking
+
+---
+
+# 12. Negative Result Possibility
+
+An important open possibility is that the framework may ultimately provide:
+
+- limited applicability
+- visualization utility only
+- mathematical curiosity value
+- niche usefulness
+- negative computational outcomes
+
+This remains scientifically plausible.
 
 ---
 
@@ -196,9 +189,10 @@ The framework lacks:
 
 The framework currently functions primarily as:
 
-- an exploratory mathematical synthesis
-- a speculative computational hypothesis
-- a finite dynamical systems investigation
+- an exploratory research program
+- a modular dynamical systems investigation
+- a speculative computational framework
+- an evolving formalization effort
 
-with substantial unresolved scientific questions remaining open.
+with substantial unresolved problems remaining open.
 
