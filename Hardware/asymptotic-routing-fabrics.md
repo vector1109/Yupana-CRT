@@ -4,20 +4,20 @@
 
 This document describes asymptotic routing fabrics within the MDST and Yupana CRT framework.
 
-The framework explores whether asymptotic organization inside modular dynamical systems may support distributed routing-oriented computational fabrics.
+The framework explores whether recurrent asymptotic organization inside modular dynamical systems may support distributed routing-oriented computational fabrics.
 
 ---
 
 # 1. Conceptual Motivation
 
-Conventional routing systems typically rely on:
+Traditional routing architectures typically rely on:
 
+- centralized control
 - explicit address computation
-- deterministic packet forwarding
-- centralized control logic
-- sequential routing evaluation
+- deterministic path evaluation
+- sequential routing logic
 
-The framework instead investigates attractor-oriented dynamical routing through recurrent modular organization.
+The framework instead investigates routing emerging from recurrent asymptotic orbital organization.
 
 ---
 
@@ -35,19 +35,19 @@ acting over:
 \mathbb{Z}_n
 \]
 
-Repeated modular evolution generates asymptotic orbital structure.
+Repeated modular evolution generates recurrent asymptotic dynamics.
 
 ---
 
-# 3. Asymptotic Organization
+# 3. Recurrent Organization
 
-Finite modular systems naturally partition into:
+Finite modular systems naturally produce:
 
-- recurrent attractors
+- periodic attractors
 - basin sectors
-- orbital corridors
-- transient transition regions
-- cyclic asymptotic structures
+- orbital recurrence
+- transient routing corridors
+- cyclic asymptotic organization
 
 inside modular phase space.
 
@@ -63,23 +63,23 @@ Using CRT:
 \prod_i \mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-global routing behavior decomposes into CRT-local modular routing domains.
+global routing organization decomposes into CRT-local recurrent routing domains.
 
 Each local coordinate evolves independently.
 
 ---
 
-# 5. Routing Fabric Structure
+# 5. Fabric Structure
 
 An asymptotic routing fabric consists conceptually of:
 
-- basin-oriented routing units
-- recurrent orbital processors
+- recurrent routing cells
+- orbital propagation channels
+- distributed asymptotic memories
 - torsional synchronization structures
-- distributed transition memories
-- CRT-local execution regions
+- basin-oriented coordination layers
 
-organized spatially across computational hardware.
+organized spatially across computational fabric.
 
 ---
 
@@ -91,19 +91,19 @@ The operator:
 \Phi(x)
 \]
 
-acts conceptually as an asymptotic routing classifier guiding state evolution toward recurrent sectors.
+classifies asymptotic basin organization potentially guiding distributed routing behavior.
 
 ---
 
-# 7. Orbital Flow Propagation
+# 7. Orbital Propagation
 
-Directed transitions:
+Directed evolution:
 
 \[
 x \to f_k(x)
 \]
 
-generate orbital flow pathways traversing distributed routing regions.
+generates recurrent orbital flow across distributed routing regions.
 
 ---
 
@@ -115,7 +115,7 @@ The torsion vector:
 \vec{\tau}(x)
 \]
 
-captures recurrent cyclic organization potentially supporting distributed synchronization behavior across routing fabrics.
+captures recurrent cyclic organization potentially contributing synchronization and coherence across routing fabrics.
 
 ---
 
@@ -125,9 +125,9 @@ Asymptotic routing fabrics conceptually align with:
 
 - FPGA routing fabrics
 - distributed SRAM systems
-- spatially parallel accelerators
-- systolic routing arrays
+- systolic execution arrays
 - modular ASIC layouts
+- spatially parallel accelerators
 
 No validated implementation currently exists.
 
@@ -138,10 +138,10 @@ No validated implementation currently exists.
 Asymptotic routing fabrics suggest computational paradigms based on:
 
 - attractor-oriented routing
-- recurrent modular organization
+- recurrent modular coordination
 - distributed orbital propagation
-- finite-state dynamical flow
-- asymptotic coordination
+- finite-state asymptotic organization
+- modular dynamical execution flow
 
 rather than centralized sequential symbolic arithmetic alone.
 
