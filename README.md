@@ -1,103 +1,186 @@
 # Yupana CRT
 
-Experimental modular computation and structural dynamics framework
-inspired by discrete circular state spaces and CRT decomposition.
+Experimental framework for modular computation and structural dynamics
+over discrete toroidal state spaces.
 
 ---
 
-## Overview
+# What This Repository Is
 
-Yupana CRT explores computation and dynamic evolution over modular
-toroidal spaces using:
+Yupana CRT is an experimental computational framework exploring:
 
-- Chinese Remainder decomposition (CRT)
-- Circular metrics on discrete phase spaces
-- Modular orbital dynamics
-- Structural tension minimization (Ψ)
-- Discrete operators over toroidal state spaces
+* modular circular state spaces
+* CRT-based decomposition
+* orbital dynamics over discrete tori
+* structural tension minimization (Ψ)
+* attractor formation and self-organization
 
-The project combines two related but distinct layers:
+The repository contains an executable runtime implementing:
 
-| Layer | Purpose |
-|---|---|
-| CRT / MDST | Deterministic modular computation |
-| Runtime Ψ | Experimental structural optimization |
+* modular metrics
+* orbital transforms
+* structural optimization
+* operator scheduling
+* dynamic attractor evolution
+* orbit memory systems
 
 ---
 
-# Conceptual Structure
+# Core Idea
 
-## 1. CRT / MDST Layer
+The system models computation over modular toroidal spaces such as:
 
-The foundational layer models states over modular circular spaces.
-
-Example:
-
-\[
+[
 (\mathbb{Z}_{60})^n
-\]
+]
 
 using the natural circular metric:
 
-\[
+[
 d(a,b)=\min(|a-b|,60-|a-b|)
-\]
+]
 
-This layer includes:
+This transforms the state space into a discrete toroidal geometry where:
 
-- residue decomposition
-- orbital transforms
-- modular recurrence structures
-- algebraic basins
-- deterministic phase evolution
+* states evolve orbitally,
+* operators deform local structure,
+* and runtime dynamics attempt to minimize structural tension.
 
 ---
 
-## 2. Φ Orbital Dynamics
+# Structural Tension Ψ
 
-Deterministic orbital evolution is defined by:
+The runtime defines:
 
-\[
-x_{t+1}=x_t^k \pmod{60}
-\]
-
-This produces:
-
-- recurrence cycles
-- attractor basins
-- modular orbital graphs
-- residue-space partitions
-
-Φ dynamics are algebraic and deterministic.
-
----
-
-## 3. Runtime Ψ Layer
-
-An experimental variational runtime operates on top of the modular space.
-
-The runtime defines a structural tension function:
-
-\[
+[
 \Psi : \mathcal{S}\rightarrow\mathbb{R}
-\]
+]
 
-where lower Ψ states represent greater structural coherence.
+where Ψ measures structural incompatibility inside the system.
 
-The runtime scheduler evaluates operators and selects transitions minimizing:
+Current implementation combines:
 
-\[
+## Local coherence
+
+[
+\Psi_{local} =
+\sum_i d(s_i,s_{i+1})
+]
+
+## Distance to attractor FIELD
+
+[
+\Psi_{field} =
+\sum_i \min_{f\in FIELD} d(s_i,f)
+]
+
+## Collapse penalty
+
+[
+\Psi_{collapse} =
+\frac{1}{Var(S)+\epsilon}
+]
+
+The scheduler evaluates candidate transitions and minimizes:
+
+[
 \Delta\Psi
-\]
+]
 
-This creates:
+creating observable structural stabilization.
 
-- emergent attractors
-- structural stabilization
-- orbital self-organization
-- dynamic basin formation
+---
 
-Unlike Φ dynamics, the Ψ runtime is heuristic and exploratory.
+# Example
+
+```python
+from yupana.crt.runtime import evolve
+
+result = evolve([1,8,20,33], steps=10)
+
+print(result["history"])
+print(result["memory"])
+```
+
+Example runtime output:
+
+```text
+step=00 psi=48.000506
+step=01 psi=30.003000
+step=02 psi=30.003000
+step=03 psi=29.003306
+step=04 psi=28.003614
+...
+step=12 psi=10.004000
+```
+
+This demonstrates dynamic convergence toward lower-tension states.
+
+---
+
+# Architecture
+
+The repository currently contains two related but distinct layers.
+
+| Layer      | Purpose                             |
+| ---------- | ----------------------------------- |
+| CRT / MDST | Deterministic modular dynamics      |
+| Runtime Ψ  | Variational structural optimization |
+
+---
+
+# CRT / MDST Layer
+
+This layer implements deterministic modular computation using:
+
+* CRT decomposition
+* orbital transforms
+* residue-space evolution
+* modular recurrence structures
+* algebraic attractor basins
+
+Orbital evolution is defined by:
+
+[
+x_{t+1}=x_t^k \pmod{60}
+]
+
+which generates recurrence cycles and modular attractor structures.
+
+---
+
+# Runtime Ψ Layer
+
+The Ψ runtime operates on top of the modular space using:
+
+* structural evaluation
+* operator scheduling
+* attractor fields
+* orbit memory
+* local optimization dynamics
+
+Unlike Φ orbital dynamics, the Ψ runtime is heuristic and exploratory.
+
+---
+
+# Historical Inspiration
+
+This project does not attempt to reconstruct the historical Yupana.
+
+The inspiration emerged from a conceptual question:
+
+> What kind of computational system would appear if position,
+> modularity, and circular movement were treated as foundational
+> computational primitives?
+
+The historical Yupana acted as a conceptual starting point for exploring:
+
+* positional dynamics,
+* modular state transitions,
+* and toroidal computational geometries.
+
+The name remains as recognition of that original inspiration,
+not as an archaeological or historical claim.
 
 ---
 
@@ -105,52 +188,43 @@ Unlike Φ dynamics, the Ψ runtime is heuristic and exploratory.
 
 ## CRT / MDST
 
-- residues
-- phi
-- metrics
+* residues
+* phi
+* metrics
 
 ## Runtime Ψ
 
-- field
-- psi
-- operators
-- scheduler
-- runtime
-- memory
+* field
+* psi
+* operators
+* scheduler
+* runtime
+* memory
 
 ---
 
 # Research Scope
 
-This repository is an experimental research framework exploring:
+Current research focuses on:
 
-- modular dynamics
-- toroidal computation
-- structural optimization
-- attractor systems
-- circular state geometries
+* modular dynamical systems
+* toroidal computation
+* orbital recurrence
+* attractor systems
+* structural optimization
+* discrete phase geometries
 
 ---
 
 # Non-Goals
 
-This project does NOT claim:
+This repository does NOT claim:
 
-- reconstruction of historical Yupana usage
-- replacement of classical computation
-- physical unification theory
-- consciousness modeling
-- quantum equivalence
-
----
-
-# Historical Inspiration
-
-The name "Yupana" is used as conceptual inspiration from Andean
-positional computation systems.
-
-This repository does not claim direct historical continuity or
-archaeological reconstruction.
+* historical reconstruction
+* physical unification
+* consciousness modeling
+* replacement of classical computation
+* quantum equivalence
 
 ---
 
@@ -171,4 +245,3 @@ Core runtime and computational modules are licensed under MPL-2.0.
 ## Theory and Documentation
 
 Conceptual and theoretical documentation are licensed under CC BY 4.0.
-
