@@ -2,15 +2,15 @@
 
 ## Overview
 
-This document specifies the conceptual torsion vector framework used within MDST and Yupana CRT.
+This document specifies the conceptual role of the torsion vector within the MDST and Yupana CRT framework.
 
-The torsion vector attempts to describe recurrent periodic structure inside CRT-decomposed modular dynamical systems.
+The torsion vector is intended to capture periodic orbital structure inside modular dynamical systems.
 
 ---
 
 # 1. Dynamical Context
 
-Consider the modular transformation:
+Consider:
 
 \[
 f_k(x)=x^k \bmod n
@@ -22,19 +22,19 @@ acting over:
 \mathbb{Z}_n
 \]
 
-Repeated evolution generates finite orbital dynamics.
+Because the space is finite, every orbit eventually reaches periodic behavior.
 
 ---
 
 # 2. CRT Decomposition
 
-Given:
+Let:
 
 \[
 n=\prod_i p_i^{\alpha_i}
 \]
 
-CRT yields:
+Then:
 
 \[
 \mathbb{Z}_n
@@ -42,73 +42,80 @@ CRT yields:
 \prod_i \mathbb{Z}_{p_i^{\alpha_i}}
 \]
 
-Each CRT coordinate evolves independently.
-
----
-
-# 3. Local Orbital Structure
-
-For each CRT coordinate:
+A state becomes:
 
 \[
-x_i \in \mathbb{Z}_{p_i^{\alpha_i}}
+x
+\leftrightarrow
+(x_1,x_2,\dots,x_r)
 \]
-
-repeated modular evolution generates local recurrent behavior including:
-
-- fixed points
-- periodic cycles
-- transient convergence
-- recurrent orbital loops
 
 ---
 
-# 4. Local Torsion Descriptor
+# 3. Local Orbital Periods
 
-Define the local torsion quantity:
+Each CRT component may evolve through a local periodic cycle.
+
+Define:
 
 \[
-\tau_i(x_i)
+\tau_i(x)
 \]
 
-as a descriptor of local recurrent periodic structure.
+as the local orbital period associated with component:
 
-Possible interpretations include:
+\[
+x_i
+\]
 
-- cycle length
-- recurrence period
-- orbital rotational structure
-- asymptotic periodicity
+under repeated application of:
 
-The exact formal definition remains open.
+\[
+f_k
+\]
 
 ---
 
-# 5. Global Torsion Vector
+# 4. Global Torsion Vector
 
-The global torsion descriptor is defined conceptually as:
+The global torsion descriptor is:
 
 \[
 \vec{\tau}(x)
 =
-(\tau_1(x_1),\dots,\tau_r(x_r))
+(\tau_1(x),\tau_2(x),\dots,\tau_r(x))
 \]
 
-This vector summarizes recurrent structure across CRT-local domains.
+This vector captures local cyclic structure across all CRT components.
 
 ---
 
-# 6. Relationship to Basin Classification
+# 5. Interpretation
 
-The basin classifier:
+The torsion vector describes:
+
+- orbital periodicity
+- recurrent structure
+- phase organization
+- asymptotic cyclic behavior
+
+inside the modular phase space.
+
+---
+
+# 6. Relationship to Φ
+
+The operator:
 
 \[
 \Phi(x)
 \]
 
-provides coarse asymptotic organization.
+provides coarse attractor classification.
 
-The torsion vector provides finer recurrent structure inside basin interiors.
+The torsion vector provides finer internal organization within attractor basins.
+
+Together they form a richer asymptotic descriptor.
 
 ---
 
@@ -120,51 +127,44 @@ Inside the functional graph:
 \mathcal{G}_{n,k}
 \]
 
-torsion corresponds to recurrent cycle organization and orbital periodicity.
+torsion corresponds to periodic graph structure including:
+
+- cycles
+- recurrent cores
+- orbital loops
+- phase-aligned regions
 
 ---
 
-# 8. Geometric Interpretation
+# 8. Computational Interpretation
 
-The torsion vector contributes to:
+Potential speculative computational roles include:
 
-- recurrent orbital geometry
-- toroidal phase structure
-- cyclic coordinate organization
-- orbital synchronization
-- asymptotic manifold structure
+- cyclic memory
+- recurrent state encoding
+- phase synchronization
+- orbital-state processing
 
-inside finite modular phase spaces.
-
----
-
-# 9. Computational Interpretation
-
-Potential speculative computational implications include:
-
-- recurrent execution
-- cyclic synchronization
-- orbital routing
-- phase-aware computation
-- distributed modular coordination
-
-These remain exploratory.
+These interpretations remain exploratory.
 
 ---
 
-# 10. Open Questions
+# 9. Open Problems
 
-Major unresolved issues include:
+Major unresolved questions include:
 
-- rigorous definition
 - uniqueness properties
-- invariant structure
+- compositional structure
 - scaling behavior
-- computational usefulness
+- algebraic invariants
+- categorical interpretation
+- complexity implications
 
 ---
 
-# 11. Research Status
+# 10. Current Status
 
-The torsion vector framework remains partially formalized and experimentally unvalidated.
+The torsion vector remains partially formalized.
+
+Its mathematical and computational significance remains under investigation.
 
